@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>First Feature</title>
+    <link href="css/simplephoto.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap" rel="stylesheet">
+    
+</head>
+       
+<body>
+    <!--navigation to pages-->
+    <ul class="navigation">
+        <li><a href="simplephoto.html">Home </a> </li>
+        <li><a href="portugal.html">Portugal</a> </li>
+        <li><a href="Ireland.html">Ireland</a> </li>
+        <li><a href="France.html">France</a> </li>
+        <li><a href="review.html">Review</a> </li>
+
+    </ul>
+    <!--heading box-->
+    <div id="heading">
+        <h1>MARK BLAKE</h1>
+        <p>--sampling of photgraphy I have taken around my travels--</p>
+        <p id="click">click one of the links above the explore!</p>
+    </div>
+    <br />
+    <!--description of author-->
+    <div class="bio">
+        <div class="biosub">
+            <h3>BIO</h3>
+            <p>I am a traveling photographer. This website is designed to feature some of my favorite photos from around the world. Currently there are three different countries for you to view (Portugal, France, Ireland). Over time more photos will be added to each page and more countires will appear. For now, please enjoy the current content of my site!</p>
+        </div>
+        <div id="biosub">
+         <img src="css/cssphoto/IMG_3220.JPG" alt="crystals" width="304" height="211" title="crystals" />
+        </div>
+    </div>
+
+   
+    <br />
+    <!--Figure for featured photo-->
+    <div id="featured">
+        <h2>Featured Photo</h2>
+        <figure>
+            <figurecaption> "Fall on fire" </figurecaption>
+            <br />
+            <img id="feat" src="images/random/IMG_9776.JPG" alt="fall on fire" width="558.75" height="419.5" title="fall on fire" />
+        </figure>
+    </div>
+    <br />
+    <div id="newPhotos">  
+        <!-- Tab links -->
+        <div class="tab">
+            <button class="tablinks" onclick="featured(event, 'London')" id="defaultOpen">London</button>
+            <button class="tablinks" onclick="featured(event, 'Paris')">Paris</button>
+            <button class="tablinks" onclick="featured(event, 'Tokyo')">Tokyo</button>
+        </div>
+
+        <!-- Tab content -->
+
+        <div id="London" class="tabcontent">
+            <h3>"NYC Streets"</h3>
+            <figure>
+                <br />
+                <img id="feat" src="images/feature/IMG_6033_polarr.JPG" alt="walking across the street in NYC" width="312" height="416" title="NYC Streets" />
+            </figure>
+        </div>
+
+        <div id="Paris" class="tabcontent">
+            <h3>"Evening NYC Skyline"</h3>
+            <figure>
+                <br />
+                <img id="feat" src="images/feature/A99BA1AD-ABD7-4F0E-B6EB-C71107B155BD.JPG" alt="evening NYC skyline" width="560.25" height="398.5" title="evening NYC skyline" />
+            </figure>
+        </div>
+
+        <div id="Tokyo" class="tabcontent">
+            <h3>"Times Square"</h3>
+                <figure>
+                <br />
+                <img id="feat" src="images/feature/IMG_3125.JPG" alt="times square in NYC" width="586.2" height="440" title="Times Square" />
+                </figure>
+        </div>
+    </div>
+    
+    <br />
+    <!--note for reserved content-->
+    <div id="reserved">
+        <p>**all rights are reserved for the content on this site**</p>
+    </div> 
+    <script src="tabs.js"></script>
+</body>
+</html>
