@@ -6,7 +6,7 @@
     </head>
     <body>
     <div>
-        <label>What's your name?
+        <label>What's your name, bitch?
         <input id="name" type="text">
         </label>
         <br>
@@ -19,7 +19,7 @@
         <br>
         <button id="button" type="button">Generate comment box!</button>
         <div id="message"></div>
-        
+
         <form action="" method="post">
         <p>
             <label id="comment"></label>
@@ -28,12 +28,12 @@
         <div id="response"></div>
     </form>
     </div>
-    
+
   <script>
   // Step 1: Find the element we want the event on
   var button = document.getElementById("button");
   // Step 2: Define the event listener function
-     
+
   var onButtonClick = function() {
     var name = document.getElementById("name").value;
     var opinion = document.getElementById("opinion").value;
@@ -43,15 +43,15 @@
     } else {
         greeting = "Hi " + name + ", what can we do to improve the site?";
     }
-    document.getElementById("comment").textContent += greeting; 
-      
+    document.getElementById("comment").textContent += greeting;
+
     var input = document.createElement("textarea");
       input.name = "post";
       input.maxLength = "500";
       input.cols = "45";
       input.rows = "6";
       response.appendChild(input); //appendChild
-    
+
   };
   // Step 3: Attach event listener to element
   button.addEventListener("click", onButtonClick);
