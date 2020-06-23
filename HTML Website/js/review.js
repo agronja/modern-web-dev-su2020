@@ -23,12 +23,13 @@
     
   };
 
-  var deleteClick = function() {
-      var elem = document.getElementById("comment");
-      elem.parentNode.removeChild(elem);
-      delete greeting;
-      return false;
-  };
+  //var deleteClick = function() {
+      //var elem = document.getElementById("comment");
+      //elem.parentNode.removeChild(elem);
+      //response.removeChild(input);
+      //response.reload();
+  //    return false;
+  //};
+
   //attach event listener to element
-  button.addEventListener("cli", deleteClick);
   button.addEventListener("click", onButtonClick, true);
