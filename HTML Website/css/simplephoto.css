@@ -14,7 +14,7 @@ h1, h2 {
     font-size: 100%;
     text-align: center;
     text-shadow: 2px 1px #666;
-    color: lightsteelblue;  
+    color: lightsteelblue;
 }
 /*making the name a bit bigger*/
 h1{
@@ -99,7 +99,7 @@ figure img{
   padding: 14px 16px;
   transition: 0.3s;
   border-style: solid;
-  border-color: black; 
+  border-color: black;
   border-radius: 3px;
 }
 
@@ -200,7 +200,21 @@ figure img{
         flex: 100%;
         max-width: 100%;
     }
-   
 }
 
 
+.gallery {
+  margin: auto;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+}
+
+.map_img {
+  object-fit: cover;
+  border: 1.25px solid Black;
+  border-radius: 25px;
+  width: 100%;
+  max-width: 150px;
+}

@@ -4,9 +4,9 @@
     <title>First Feature</title>
     <link href="css/simplephoto.css" type="text/css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap" rel="stylesheet">
-    
+
 </head>
-       
+
 <body>
     <!--navigation to pages-->
     <ul class="navigation">
@@ -35,24 +35,18 @@
         </div>
     </div>
 
-   
+
     <br />
-    <!--Figure for featured photo-->
-    <div id="featured">
-        <h2>Featured Photo</h2>
-        <figure>
-            <figurecaption> "Fall on fire" </figurecaption>
-            <br />
-            <img id="feat" src="images/random/IMG_9776.JPG" alt="fall on fire" width="558.75" height="419.5" title="fall on fire" />
-        </figure>
+    <!--Figure for maps-->
+    <div id="map" class="gallery">
     </div>
     <br />
-    <div id="newPhotos">  
+    <div id="newPhotos">
         <!-- Tab links -->
         <div class="tab">
-            <button class="tablinks" onclick="featured(event, 'London')" id="defaultOpen">London</button>
-            <button class="tablinks" onclick="featured(event, 'Paris')">Paris</button>
-            <button class="tablinks" onclick="featured(event, 'Tokyo')">Tokyo</button>
+            <button class="tablinks" onclick="featured(event, 'London')" id="defaultOpen">1</button>
+            <button class="tablinks" onclick="featured(event, 'Paris')">2</button>
+            <button class="tablinks" onclick="featured(event, 'Tokyo')">3</button>
         </div>
 
         <!-- Tab content -->
@@ -81,12 +75,14 @@
                 </figure>
         </div>
     </div>
-    
+
     <br />
     <!--note for reserved content-->
     <div id="reserved">
         <p>**all rights are reserved for the content on this site**</p>
-    </div> 
+    </div>
     <script src="js/tabs.js"></script>
+    <script src="js/showLocations.js"></script>
+    <script src="js/locations.js"></script>
 </body>
 </html>
