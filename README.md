@@ -1,1 +1,1 @@
-# Mark and Josh's best attempt at making a gitHub repository
+# Mark and Josh's best attempt at sharing stuff with each other on GitHub
