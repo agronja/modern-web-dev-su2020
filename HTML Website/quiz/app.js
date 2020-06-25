@@ -41,7 +41,7 @@ function ExampleService() {
     // Properties
     // Methods
 }
-angular.module('app').controller('SecondController',['question', function(questions) {
+/*angular.module('app').controller('SecondController',['question', function(questions) {
     const ctrl = this;
     ctrl.questions [
         {
@@ -76,7 +76,75 @@ angular.module('app').controller('SecondController',['question', function(questi
 		}
     ]
 
-                                 }]);
+                                 }]); */
+angular.module('app').controller('SecondController', [ function() {
+    
+}]);
+
+
+
+//Not sure how to link the template and data files, v my attempt
+angular.component('app').({'template.html', 'data.js'})
+
+
+
+
+angular.module('app').controller('photo-quiz', ['questions', function('questions') {
+    
+    //how do i get template.html to work with this??
+
+    templateUrl: 'template.html',
+    
+    const $ctrl = this;
+    $ctrl.start = function() {
+        $ctrl.id = 0;
+        $ctrl.quizOver = false;
+        $ctrl.inProgress = true;
+        $ctrl.getQuestion();
+    };
+    
+    $ctrl.reset = function() {
+        $ctrl.inProgress = false;
+        $ctrl.score = 0;
+    };
+
+    $ctrl.getQuestion = function() {
+        var q = quizPhoto.getQuestion($ctrl.id);
+        if(q) {
+            $ctrl.image = q.image;
+            $ctrl.question = q.question;
+            $ctrl.options = q.options;
+            $ctrl.answer = q.answer;
+            $ctrl.answerMode = true;
+            } else {
+                $ctrl.quizOver = true;
+            }
+    };
+
+    $ctrl.checkAnswer = function() {
+        if(!$('input[name=answer]:checked').length) return;
+
+        var ans = $('input[name=answer]:checked').val();
+
+        if(ans == $ctrl.options[$ctrl.answer]) {
+            $ctrl.score++;
+            $ctrl.correctAns = true;
+        } else {
+            $ctrl.correctAns = false;
+        }
+
+        $ctrl.answerMode = false;
+    };
+
+    $ctrl.nextQuestion = function() {
+        $ctrl.id++;
+        $ctrl.getQuestion();
+    };
+
+    $ctrl.reset();
+
+
+}]);
+
 /*--------------------- Example Service ---------------------*/
 
-angular.module('app').controller('')
