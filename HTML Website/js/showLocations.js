@@ -1,8 +1,9 @@
+
 function locations(data) {
     var newContent = '';
 
     for (var i = 0; i < data.events.length; i++) {
-        newContent += '<figure class="grid-item-' + i + '">';
+        newContent += '<figure>';
         newContent += '<img src="' + data.events[i].map + '"';
         newContent += ' alt="' + data.events[i].location + '"';
         newContent += ' class="map_img" />';
@@ -26,3 +27,17 @@ function locations(data) {
 
 
 }
+/*
+
+var app = angular.module('app', ["ngMaterial", "ngMessages"]);
+app.controller('mapCtrl', function($scope, $http) {
+  $http.get('locations.js').then(function success(response) {
+    $scope.locations = response.data;
+    $scope.statusVal = response.status;
+    $scope.statusText = response.statusText;
+    $scope.headers = response.headers();
+  }, function error(response) {
+    console.log("oops");
+  })
+})
+*/

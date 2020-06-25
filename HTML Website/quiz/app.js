@@ -11,8 +11,8 @@ angular.module('app').component('home', home);
 
 // Home Controller with dependency injection using the array method
 angular.module('app').controller('HomeController', ['ExampleService', function (ExampleService) {
-    
-    
+
+
 
 }]);
 /*--------------------- Home Component ---------------------*/
@@ -43,7 +43,7 @@ function ExampleService() {
 }
 angular.module('app').controller('SecondController',['question', function(questions) {
     const ctrl = this;
-    ctrl.questions [ 
+    ctrl.questions [
         {
             'image': "images/Port/Snapseed.jpg",
 			'question': "Question 1: What place does this image come from?",
@@ -68,14 +68,15 @@ angular.module('app').controller('SecondController',['question', function(questi
 			'options': ["Alvor", "Paris", "Ballymaloe", "Dublin"],
 			'answer': 2
 		},
-		{	
+		{
             'image': "",
 			'question': "Question 5: What place does this image come from?",
 			'options': ["Alvor", "Paris", "Ballymaloe", "Dublin"],
 			'answer': 2
-		}                      
+		}
     ]
-                     
+
                                  }]);
 /*--------------------- Example Service ---------------------*/
 
+angular.module('app').controller('')
