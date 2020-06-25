@@ -1,4 +1,4 @@
-
+/*
 function locations(data) {
     var newContent = '';
 
@@ -27,17 +27,53 @@ function locations(data) {
 
 
 }
-/*
+*/
 
-var app = angular.module('app', ["ngMaterial", "ngMessages"]);
-app.controller('mapCtrl', function($scope, $http) {
-  $http.get('locations.js').then(function success(response) {
-    $scope.locations = response.data;
-    $scope.statusVal = response.status;
-    $scope.statusText = response.statusText;
-    $scope.headers = response.headers();
-  }, function error(response) {
-    console.log("oops");
-  })
-})
+/*  Attempt number 1 */
+var mapApp = angular.module('mapApp', ["ngMaterial", "ngMessages"]);
+mapApp.controller('mapCtrl', ['$scope', '$http',
+  function($scope, $http) {
+    console.log("hello");
+    $http.get('https://raw.githubusercontent.com/agronja/modern-web-dev-su2020/master/HTML%20Website/js/locations.json').then(
+      function success(response) {
+        $scope.locations = response.data;
+        $scope.statusVal = response.status;
+        $scope.statusText = response.statusText;
+        $scope.headers = response.headers();
+        console.log($scope.locations);
+        console.log(response);
+      },
+      function error(response) {
+        console.log("oops");
+        console.log(response);
+      }
+    )
+  }
+])
+
+
+/* Attempt number 2
+var mapApp = angular.module('mapApp', ["ngMaterial", "ngMessages"]);
+mapApp.controller('mapCtrl', ['$scope', '$http',
+  function($scope, $http) {
+
+    var request = {
+      method: 'GET',
+      url: 'js/locations.js',
+      datatype: 'json',
+      contentType: "application/json"
+    };
+
+    $scope.locations = new Array;
+
+    $http(request)
+      .success(function(jsonData) {
+        $scope.locations = jsonData;
+        $scope.maps = $scope.locations;
+      })
+      .error(function() {
+        console.log("oops");
+      });
+  }
+]);
 */
