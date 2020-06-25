@@ -1,4 +1,5 @@
-[{
+{
+      locations: [{
       "location": "Alvor, Portugal",
       "date": "July 2019",
       "map": "js/map/Alvor.jpg",
@@ -26,4 +27,4 @@
       "numberStart": "4",
       "numberEnd": "5"
     }
-  ];
+  ]};
