@@ -45,8 +45,8 @@
     </div>
     -->
   <div ng-app="mapApp" ng-controller="mapCtrl">
-    <div ng-repeat="x in locations" class="gallery">
-      <figure> <!-- remember the style here -->
+    <div ng-repeat="x in maps track by $index" class="gallery">
+      <figure style="column: $index"> <!-- remember the style here -->
         <img ng-src="{{x.map}}" ng-alt="{{x.location}}" class="map_img" />
         <p>
           <b>{{x.location}}</b><br />

@@ -33,26 +33,52 @@ function locations(data) {
 var mapApp = angular.module('mapApp', ["ngMaterial", "ngMessages"]);
 mapApp.controller('mapCtrl', ['$scope', '$http',
   function($scope, $http) {
-    console.log("hello");
+
     $http.get('https://raw.githubusercontent.com/agronja/modern-web-dev-su2020/master/HTML%20Website/js/locations.json').then(
       function success(response) {
-        $scope.locations = response.data;
-        $scope.statusVal = response.status;
-        $scope.statusText = response.statusText;
-        $scope.headers = response.headers();
+        $scope.maps = response.data;
         console.log($scope.locations);
-        console.log(response);
       },
       function error(response) {
         console.log("oops");
         console.log(response);
       }
     )
+
+
+    console.log($scope);
+
   }
 ])
 
-
 /* Attempt number 2
+function mapCtrl(){
+
+}
+var mapApp = angular.module('mapApp', ["ngMaterial", "ngMessages"]);
+mapApp.controller('mapCtrl', mapCtrl);
+
+function mapService($http){
+  const self = this;
+  self.url = 'https://raw.githubusercontent.com/agronja/modern-web-dev-su2020/master/HTML%20Website/js/locations.json';
+  self.createMap = createMap;
+  function createMap(location, date, map){
+    return this.$http({
+      method: 'GET',
+      url: self.url,
+      data: {
+        location,
+        date,
+        map
+      }
+    })
+  }
+}
+mapApp.service('mapService', mapService);
+mapService.$inject = ['$http'];
+*/
+
+/* Attempt number 3
 var mapApp = angular.module('mapApp', ["ngMaterial", "ngMessages"]);
 mapApp.controller('mapCtrl', ['$scope', '$http',
   function($scope, $http) {
