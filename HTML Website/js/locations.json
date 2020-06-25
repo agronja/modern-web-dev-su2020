@@ -1,5 +1,4 @@
-"thisObject": {
-  "locations": [
+[
     {
       "location": "Alvor, Portugal",
       "date": "July 2019",
@@ -28,5 +27,4 @@
       "numberStart": "4",
       "numberEnd": "5"
     }
-  ]
-};
+];
