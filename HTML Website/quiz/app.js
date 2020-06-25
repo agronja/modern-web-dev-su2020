@@ -41,60 +41,19 @@ function ExampleService() {
     // Properties
     // Methods
 }
-/*angular.module('app').controller('SecondController',['question', function(questions) {
-    const ctrl = this;
-    ctrl.questions [
-        {
-            'image': "images/Port/Snapseed.jpg",
-			'question': "Question 1: What place does this image come from?",
-			'options': ["Alvor", "Paris", "Ballymaloe", "Dublin"],
-			'answer': 2
-		},
-		{
-            'image': "" ,
-			'question': "Question 2: What place does this image come from?",
-			'options': ["Alvor", "Paris", "Ballymaloe", "Dublin"],
-			'answer': 2
-		},
-		{
-            'image': "",
-			'question': "Question 3: What place does this image come from?",
-			'options': ["Alvor", "Paris", "Ballymaloe", "Dublin"],
-			'answer': 2
-		},
-		{
-            "image": "",
-			'question': "Question 4: What place does this image come from? ",
-			'options': ["Alvor", "Paris", "Ballymaloe", "Dublin"],
-			'answer': 2
-		},
-		{
-            'image': "",
-			'question': "Question 5: What place does this image come from?",
-			'options': ["Alvor", "Paris", "Ballymaloe", "Dublin"],
-			'answer': 2
-		}
-    ]
-
-                                 }]); */
 angular.module('app').controller('SecondController', [ function() {
-    
+
 }]);
-
-
 
 //Not sure how to link the template and data files, v my attempt
 angular.component('app').({'template.html', 'data.js'})
 
-
-
-
 angular.module('app').controller('photo-quiz', ['questions', function('questions') {
-    
+
     //how do i get template.html to work with this??
 
     templateUrl: 'template.html',
-    
+
     const $ctrl = this;
     $ctrl.start = function() {
         $ctrl.id = 0;
@@ -102,7 +61,7 @@ angular.module('app').controller('photo-quiz', ['questions', function('questions
         $ctrl.inProgress = true;
         $ctrl.getQuestion();
     };
-    
+
     $ctrl.reset = function() {
         $ctrl.inProgress = false;
         $ctrl.score = 0;
@@ -147,4 +106,3 @@ angular.module('app').controller('photo-quiz', ['questions', function('questions
 }]);
 
 /*--------------------- Example Service ---------------------*/
-

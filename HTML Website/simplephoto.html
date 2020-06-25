@@ -40,13 +40,9 @@
 
 
   <br />
-  <!--Figure for maps
-    <div id="map" class="gallery">
-    </div>
-    -->
   <div ng-app="mapApp" ng-controller="mapCtrl">
-    <div ng-repeat="x in maps track by $index" class="gallery">
-      <figure style="column: $index"> <!-- remember the style here -->
+    <maps-item ng-repeat="x in $ctrl.maps" class="gallery"></maps-item>
+      <figure id={{x.numberStart}}> <!-- remember the style here -->
         <img ng-src="{{x.map}}" ng-alt="{{x.location}}" class="map_img" />
         <p>
           <b>{{x.location}}</b><br />
