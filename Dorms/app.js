@@ -39,7 +39,7 @@ function DormsController(DormService) {
     DormService.getDorms().then(
       function(result) {
         console.log(result);
-        var selector = document.getElementById('dorm-input').value;
+        //var selector = document.getElementById('dorm-input').value;
 
       })
   }
