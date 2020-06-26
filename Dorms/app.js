@@ -12,6 +12,7 @@ angular.module('app').component('home', home);
 // Home Controller with dependency injection using the array method
 angular.module('app').controller('HomeController', ['DormService', function(DormService) {
   const ctrl = this;
+  //use DormService
   DormService.getDorms().then(
     function(response) {
       ctrl.dorms = response;
@@ -38,13 +39,16 @@ function DormsController(DormService) {
   ctrl.findDorm = function() {
     DormService.getDorms().then(
       function(result) {
+          // getting the text inputted by the user
           var selector = document.getElementById('dorm-input').value;
+          // loop to check each name in dorms.json
           for(x of result.data){
-              
+              //if a match is found, load the data
               if(selector.toLowerCase() == x.name.toLowerCase()){
                   ctrl.sel = x;
                   break;
               }
+              //if no match is found, print out this 
               else {
                   ctrl.sel = {
                       "name": "Not found",
@@ -70,7 +74,7 @@ function DormService($http) {
   // Methods
   const self = this;
   self.getDorms = getDorms;
-
+//http request element to retrieve data
   function getDorms() {
     return $http.get('./dorms.json')
 
