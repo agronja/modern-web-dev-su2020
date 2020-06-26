@@ -38,9 +38,23 @@ function DormsController(DormService) {
   ctrl.findDorm = function() {
     DormService.getDorms().then(
       function(result) {
-        console.log(result);
-        //var selector = document.getElementById('dorm-input').value;
-
+          var selector = document.getElementById('dorm-input').value;
+          for(x of result.data){
+              
+              if(selector == x.name){
+                  ctrl.sel = x;
+                  break;
+              }
+              else {
+                  ctrl.sel = {
+                      "name": "Not found",
+                      "year": "N/A",
+                      "ppl": "N/A",
+                      "mascot": "N/A"
+                  }
+              }
+                
+          }
       })
   }
 
