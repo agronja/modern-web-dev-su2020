@@ -88,11 +88,9 @@ angular.component('app').({'template.html', 'data.js'})
 
 
 
-
 angular.module('app').controller('photo-quiz', ['questions', function('questions') {
     
     //how do i get template.html to work with this??
-
     templateUrl: 'template.html',
     
     const $ctrl = this;
