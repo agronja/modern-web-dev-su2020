@@ -20,7 +20,6 @@ angular.module('app').controller('HomeController', ['DormService', function(Dorm
 
 }]);
 
-HomeController.$inject = ['DormService'];
 /*--------------------- Home Component ---------------------*/
 
 /*--------------------- Dorms Component ---------------------*/
@@ -51,7 +50,7 @@ angular.module('app').controller('DormsController', DormsController);
 /*--------------------- Dorms Component ---------------------*/
 
 /*--------------------- Dorm Service ---------------------*/
-function DormService() {
+function DormService($http) {
   // Services are Singletons
   // Properties
   // Methods
