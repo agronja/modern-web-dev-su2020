@@ -36,7 +36,7 @@ function DormsController(DormService) {
   const ctrl = this;
 
   ctrl.findDorm = function() {
-    DormService().getDorms().then(
+    DormService.getDorms().then(
       function(result) {
         console.log(result);
         var selector = document.getElementById('dorm-input').value;
