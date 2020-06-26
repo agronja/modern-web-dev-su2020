@@ -1,23 +1,28 @@
+<!--.html where the button and table are generated from-->
+
+<!--button that causes the requested information to load when pressed-->
 <button ng-click="$ctrl.findDorm()" >Find out more!</button>
 <br />
 <br />
+<!--table of elements along with the data corresponding to the user's input-->
 <div>
-<table>
-  <tr>
-    <td><h1>Dorm</h1></td>
-    <td><h1>{{$ctrl.sel.name}}</h1></td>
-  </tr>
-  <tr>
-    <td>Established</td>
-    <td>{{$ctrl.sel.year}}</td>
-  </tr>
-  <tr>
-    <td>Max Occupancy</td>
-    <td>{{$ctrl.sel.ppl}}</td>
-  </tr>
-  <tr>
-    <td>Mascot</td>
-    <td>{{$ctrl.sel.mascot}}</td>
-  </tr>
-</table>
+    <table>
+    <tr>
+        <td><h1>Dorm</h1></td>
+        <!--the line below retrives data from dorms.json if it matches the name of a dorm (if not the exception is caught in app.js)-->
+        <td><h1>{{$ctrl.sel.name}}</h1></td>
+    </tr>
+    <tr>
+        <td>Established</td>
+        <td>{{$ctrl.sel.year}}</td>
+    </tr>
+    <tr>
+        <td>Max Occupancy</td>
+        <td>{{$ctrl.sel.ppl}}</td>
+    </tr>
+    <tr>
+        <td>Mascot</td>
+        <td>{{$ctrl.sel.mascot}}</td>
+    </tr>
+    </table>
 </div>

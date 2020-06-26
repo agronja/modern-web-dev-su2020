@@ -1,0 +1,56 @@
+/*main body styles*/
+body {
+   padding-top: 50px;
+   padding-left: 600px;
+   background-image: url(images/nd.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: white;
+   font-family: 'Raleway', sans-serif;
+   color: rgb(213, 229, 245);
+   text-shadow: 2px 1px #666;
+}
+/*title syles*/
+h1 {
+   text-decoration: underline; 
+   font-style:italic;
+   color: rgb(73, 124,339);
+}
+/*table outline*/
+table {
+    border-collapse: collapse;
+    width: 50%;
+    background-color: lightsteelblue;
+    box-shadow: 10px 10px 10px lightgrey;
+    color: white;
+}
+/*white table outline*/
+table, tr, td {
+    border: 2px solid black;
+}
+/*padding within the table*/
+tr, td {
+    padding: 15px;
+}
+/*size 1000*/
+@media all and (max-width: 1100px) {
+    /*changing padding with window to make the elements more readable*/
+    body {
+        padding-left: 450px;
+    }
+}
+/*size 800*/
+@media all and (max-width: 800px) {
+    /*padding change for readability*/
+    body {
+        padding-left: 50px;
+    }
+}
+/*size 600*/
+@media all and (max-width: 600px) {
+    /*text alignment for readability*/
+    body {
+        text-align: center;
+    }
+    
+}
