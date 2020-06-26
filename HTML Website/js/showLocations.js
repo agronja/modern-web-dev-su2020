@@ -1,5 +1,4 @@
 
-/*  Attempt number 1 */
 var mapApp = angular.module('mapApp', ["ngMaterial", "ngMessages"]);
 mapApp.controller('mapCtrl', ['MapService',
   function(MapService) {
@@ -11,17 +10,6 @@ mapApp.controller('mapCtrl', ['MapService',
         ctrl.maps = response;
       }
     )
-    /*
-        var column = 0;
-        for (var i = 0; i < $scope.maps.length; i++) {
-          var dataID = i;
-          document.getElementById(dataID).style.gridColumnStart = column;
-          column++;
-          document.getElementById(dataID).style.gridColumnEnd = column;
-          document.getElementById(dataID).style.margin = auto;
-
-        }
-    */
   }
 ])
 
