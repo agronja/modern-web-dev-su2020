@@ -41,52 +41,15 @@ function ExampleService() {
     // Properties
     // Methods
 }
-/*angular.module('app').controller('SecondController',['question', function(questions) {
-    const ctrl = this;
-    ctrl.questions [
-        {
-            'image': "images/Port/Snapseed.jpg",
-			'question': "Question 1: What place does this image come from?",
-			'options': ["Alvor", "Paris", "Ballymaloe", "Dublin"],
-			'answer': 2
-		},
-		{
-            'image': "" ,
-			'question': "Question 2: What place does this image come from?",
-			'options': ["Alvor", "Paris", "Ballymaloe", "Dublin"],
-			'answer': 2
-		},
-		{
-            'image': "",
-			'question': "Question 3: What place does this image come from?",
-			'options': ["Alvor", "Paris", "Ballymaloe", "Dublin"],
-			'answer': 2
-		},
-		{
-            "image": "",
-			'question': "Question 4: What place does this image come from? ",
-			'options': ["Alvor", "Paris", "Ballymaloe", "Dublin"],
-			'answer': 2
-		},
-		{
-            'image': "",
-			'question': "Question 5: What place does this image come from?",
-			'options': ["Alvor", "Paris", "Ballymaloe", "Dublin"],
-			'answer': 2
-		}
-    ]
-
-                                 }]); */
 angular.module('app').controller('SecondController', [ function() {
-    
+
 }]);
-
-
 
 //Not sure how to link the template and data files, v my attempt
 angular.component('app').({'template.html', 'data.js'})
 
 
+<<<<<<< HEAD
 
 angular.module('app').controller('photo-quiz', ['questions', function('questions') {
     
@@ -144,5 +107,8 @@ angular.module('app').controller('photo-quiz', ['questions', function('questions
 
 }]);
 
+=======
+>>>>>>> 26b40eba303a2ec00a0edb745143ab3ef4f2e63c
 /*--------------------- Example Service ---------------------*/
 
+/*

@@ -1,43 +1,26 @@
 
-function locations(data) {
-    var newContent = '';
+var mapApp = angular.module('mapApp', ["ngMaterial", "ngMessages"]);
+mapApp.controller('mapCtrl', ['MapService',
+  function(MapService) {
+    const ctrl = this;
 
-    for (var i = 0; i < data.events.length; i++) {
-        newContent += '<figure>';
-        newContent += '<img src="' + data.events[i].map + '"';
-        newContent += ' alt="' + data.events[i].location + '"';
-        newContent += ' class="map_img" />';
-        newContent += '<p><b>' + data.events[i].location + '</b><br>';
-        newContent += data.events[i].date + '</p>';
-        newContent += '</figure>';
-    }
+    MapService.getMaps().then(
 
-    document.getElementById('map').innerHTML += newContent;
+      function(response) {
+        ctrl.maps = response;
+      }
+    )
+  }
+])
 
-    var column = 0;
-    for (var i = 0; i < data.events.length; i++) {
-      var dataID = 'grid-item-' + i;
-      document.getElementById(dataID).style.gridColumnStart = column;
-      column++;
-      document.getElementById(dataID).style.gridColumnEnd = column;
-      document.getElementById(dataID).style.margin = auto;
+function MapService($http) {
+  const self = this;
+  self.getMaps = getMaps;
 
-    }
+  function getMaps() {
+    return $http.get('https://raw.githubusercontent.com/agronja/modern-web-dev-su2020/master/HTML%20Website/js/locations.json')
 
-
-
+  }
 }
-/*
-
-var app = angular.module('app', ["ngMaterial", "ngMessages"]);
-app.controller('mapCtrl', function($scope, $http) {
-  $http.get('locations.js').then(function success(response) {
-    $scope.locations = response.data;
-    $scope.statusVal = response.status;
-    $scope.statusText = response.statusText;
-    $scope.headers = response.headers();
-  }, function error(response) {
-    console.log("oops");
-  })
-})
-*/
+angular.module('mapApp').service('MapService', MapService);
+MapService.$inject = ['$http'];
