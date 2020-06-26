@@ -1,32 +1,218 @@
 [
-  {
-    "name": "Keenan",
-    "year": "1957",
-    "ppl": "250",
-    "mascot": "Knights"
-  },
-  {
-    "name": "Siegfried",
-    "year": "1988",
-    "ppl": "252",
-    "mascot": "Ramblers"
-  },
-  {
-    "name": "Pasquerilla East",
-    "year": "1981",
-    "ppl": "248",
-    "mascot": "Pyros"
-  },
-  {
-    "name": "PE",
-    "year": "1981",
-    "ppl": "248",
-    "mascot": "Pyros"
-  },
-  {
-    "name": "Walsh",
-    "year": "1909",
-    "ppl": "160",
-    "mascot": "Wild Women"
-  }
+    {
+        "name": "Alumni",
+        "year": "1931",
+        "ppl": "225",
+        "mascot": "Dawgs"
+    },    
+    {
+        "name": "Badin",
+        "year": "1897",
+        "ppl": "140",
+        "mascot": "Bullfrogs"
+    },    
+    {
+        "name": "Breen-Phillips",
+        "year": "1939",
+        "ppl": "192",
+        "mascot": "Babes"
+    },    
+    {
+        "name": "BP",
+        "year": "1939",
+        "ppl": "192",
+        "mascot": "Babes"
+    },        
+    {
+        "name": "Carroll",
+        "year": "1906",
+        "ppl": "102",
+        "mascot": "Vermin"
+    },    
+    {
+        "name": "Cavanaugh",
+        "year": "1936",
+        "ppl": "211",
+        "mascot": "Chaos"
+    },    
+    {
+        "name": "Cav",
+        "year": "1936",
+        "ppl": "211",
+        "mascot": "Chaos"
+    },        
+    {
+        "name": "Dillon",
+        "year": "1931",
+        "ppl": "290",
+        "mascot": "Big Red"
+    },    
+    {
+        "name": "Duncan",
+        "year": "2008",
+        "ppl": "232",
+        "mascot": "Highlanders"
+    },    
+    {
+        "name": "Dunne",
+        "year": "2016",
+        "ppl": "221",
+        "mascot": "Sentinels"
+    },    
+    {
+        "name": "Farley",
+        "year": "1947",
+        "ppl": "216",
+        "mascot": "Angels"
+    },    
+    {
+        "name": "Fisher",
+        "year": "1952",
+        "ppl": "183",
+        "mascot": "Green Wave"
+    },    
+    {
+        "name": "Flaherty",
+        "year": "2016",
+        "ppl": "226",
+        "mascot": "Bears"
+    },    
+    {
+        "name": "Howard",
+        "year": "1924",
+        "ppl": "154",
+        "mascot": "256"
+    },        
+    {
+        "name": "Keenan",
+        "year": "1957",
+        "ppl": "250",
+        "mascot": "Knights"
+    },
+    {
+        "name": "Keough",
+        "year": "1996",
+        "ppl": "271",
+        "mascot": "Kangaroos"
+    },    
+    {
+        "name": "Knott",
+        "year": "1988",
+        "ppl": "240",
+        "mascot": "Juggerknotts"
+    },    
+    {
+        "name": "Lewis",
+        "year": "1965",
+        "ppl": "279",
+        "mascot": "Chicks"
+    },    
+    {
+        "name": "Lyons",
+        "year": "1925",
+        "ppl": "183",
+        "mascot": "Lions"
+    },    
+    {
+        "name": "McGlinn",
+        "year": "1997",
+        "ppl": "284",
+        "mascot": "Shamrocks"
+    },    
+    {
+        "name": "Morrissey",
+        "year": "1925",
+        "ppl": "232",
+        "mascot": "The Manor"
+    },    
+    {
+        "name": "O'Neill",
+        "year": "1996",
+        "ppl": "266",
+        "mascot": "Angry Mob"
+    },    
+    {
+        "name": "Pasquerilla East",
+        "year": "1981",
+        "ppl": "248",
+        "mascot": "Pyros"
+    },
+    {
+        "name": "PE",
+        "year": "1981",
+        "ppl": "248",
+        "mascot": "Pyros"
+    },
+    {
+        "name": "Pasquerilla West",
+        "year": "1981",
+        "ppl": "258",
+        "mascot": "Purple Weasels"
+    },  
+    {
+        "name": "PDub",
+        "year": "1981",
+        "ppl": "258",
+        "mascot": "Purple Weasels"
+    },    
+    {
+        "name": "Ryan",
+        "year": "2009",
+        "ppl": "267",
+        "mascot": "Wildcats"
+    },    
+    {
+        "name": "St. Edward's",
+        "year": "1882 (1929 as a dorm)",
+        "ppl": "158",
+        "mascot": "Gentlemen"
+    },    
+    {
+        "name": "Steds",
+        "year": "1882 (1929 as a dorm)",
+        "ppl": "158",
+        "mascot": "Gentlemen"
+    },        
+    {
+        "name": "Siegfried",
+        "year": "1988",
+        "ppl": "252",
+        "mascot": "Ramblers"
+    },
+    {
+        "name": "Sorin",
+        "year": "1888",
+        "ppl": "146",
+        "mascot": "Otters"
+    },    
+    {
+        "name": "Stanford",
+        "year": "1957",
+        "ppl": "234",
+        "mascot": "Griffins"
+    },
+    {
+        "name": "Walsh",
+        "year": "1909",
+        "ppl": "160",
+        "mascot": "Wild Women"
+    },    
+    {
+        "name": "Welsh Family",
+        "year": "1997",
+        "ppl": "281",
+        "mascot": "Whirlwinds"
+    },        
+    {
+        "name": "Welsh Fam",
+        "year": "1997",
+        "ppl": "281",
+        "mascot": "Whirlwinds"
+    }, 
+    {
+        "name": "Zahm",
+        "year": "1937",
+        "ppl": "202",
+        "mascot": "Dumbasses"
+    }
 ]

@@ -41,7 +41,7 @@ function DormsController(DormService) {
           var selector = document.getElementById('dorm-input').value;
           for(x of result.data){
               
-              if(selector == x.name){
+              if(selector.toLowerCase() == x.name.toLowerCase()){
                   ctrl.sel = x;
                   break;
               }
