@@ -44,7 +44,7 @@ function DormsController(DormService) {
           // loop to check each name in dorms.json
           for(x of result.data){
               //if a match is found, load the data
-              if(selector.toLowerCase == x.toLowerCase){
+              if(selector.toLowerCase() == x.name.toLowerCase()){
                   ctrl.sel = x;
                   break;
               }
