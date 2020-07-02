@@ -2,7 +2,7 @@ angular.module('app', ['ngMaterial', 'ngMessages']);
 
 /*--------------------- Home Component ---------------------*/
 const home = {
-  templateUrl: './home/home.html',
+  templateUrl: 'app/home.html',
   controller: 'HomeController'
 }
 
@@ -25,7 +25,7 @@ angular.module('app').controller('HomeController', ['DormService', function(Dorm
 
 /*--------------------- Dorms Component ---------------------*/
 const dorms = {
-  templateUrl: './home/dorm.html',
+  templateUrl: 'app/dorm.html',
   controller: 'DormsController'
 }
 
@@ -76,7 +76,7 @@ function DormService($http) {
   self.getDorms = getDorms;
 //http request element to retrieve data
   function getDorms() {
-    return $http.get('./dorms.json')
+    return $http.get('app/dorms.json')
 
   }
 }
