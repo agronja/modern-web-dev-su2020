@@ -9,7 +9,7 @@ angular
     .config(function ($locationProvider, $mdThemingProvider, ParseProvider){
     
         var MY_PARSE_APP_ID = 'TjuZFnHAn9J5Fn68Qx15iEIrpAArmKSuAHvwMpMo';
-        var MY_PARSE_JS_KEY = '';
+        var MY_PARSE_JS_KEY = 'IWFF1v6ucEEnBPp6965PbD4WaVCe65vDV1VZZRbk';
         ParseProvider.initialize(MY_PARSE_APP_ID, MY_PARSE_JS_KEY);
         ParseProvider.serverURL = 'https://parseapi.back4app.com/';
 })
