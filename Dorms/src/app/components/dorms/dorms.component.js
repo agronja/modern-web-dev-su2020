@@ -2,7 +2,7 @@ var dorms = {
 	template: `
 		<div class="dorms">
 			<div class="dorms-methods">
-				<h3>How would you like to contact me?</h3>
+				<h3>Click on a dorm to learn about it!</h3>
 				<div ui-view="methods"></div>
 			</div>
 			<div class="dorms-details" ui-view="details"></div>
@@ -22,7 +22,7 @@ angular
 					'@': {
 						component: 'dorms'
 					},
-					'methods@contact': {
+					'methods@dorms': {
 						component: 'dormsMethods'
 					}
 				}

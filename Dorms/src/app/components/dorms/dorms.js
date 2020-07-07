@@ -1,4 +1,4 @@
 angular
-	.module('contact', [
+	.module('dorms', [
 		'ui.router'
 	]);
