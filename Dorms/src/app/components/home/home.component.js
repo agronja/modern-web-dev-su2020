@@ -1,6 +1,6 @@
 var home = {
     template: `
-        <div class="home">Home Page </div>`
+        <div class="home">Home</div>`
 };
 
 angular

@@ -9,46 +9,36 @@
         <link href="css/styles.css" rel="stylesheet" />
         <!--link for the google font used-->
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-        
+
         <link id="bundlecss" rel="stylesheet" href="">
     </head>
 
     <body>
         <!-- tag for loading the home-->
         <home></home>
-        
+
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-animate.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-aria.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-messages.min.js"></script>
         <!-- Angular Material Javascript now available via Google CDN; version 1.1.23 used here -->
         <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.23/angular-material.min.js"></script>
-        
+
         <!--<div class="content" ui-view></div>-->
-        
+
         <!--script for the main js file called app.js-->
+        <!-- Somehow get the angular ui router file here? -->
         <script src="app/app.js"></script>
-        
+        <script src="app/components/about/about.js"></script>
+        <script src="app/components/about/about.componentjs"></script>
+        <script src="app/components/home/home.js"></script>
+        <script src="app/components/home/home.componentjs"></script>
+        <script src="app/components/dorms/dorms.js"></script>
+        <script src="app/components/dorms/dorms.componentjs"></script>
+
         <script ng-app="root"></script>
-        
+
         <script id="bundle" src=""></script>
         <script> id="bundle2" src=""</script>
     </body>
 </html>
-<!--
-<!doctype html>
-<html ng-app="root" ng-strict-di>
-  <head>
-    <meta charset="utf-8">
-    <title>Contacts Manager</title>
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <root>
-      <span class="loader">Loading...</span>
-    </root>
-    <script src="js/vendor.js"></script>
-    <script src="js/bundle.js"></script>
-  </body>
-</html>-->
