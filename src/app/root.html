@@ -1,7 +1,11 @@
 <div class="root">
-    <a ui-sref="home">Home</a>
-    <a ui-sref="about">About</a>
-    <a ui-sref="dorms">Dorms</a>
-    <a ui-sref="events">Events</a>
-    <div ui-view></div>
+  <header class="header">
+    <ul class="header__labels">
+      <li><a ui-sref="home" ui-sref-active="active">Home</a></li>
+      <li><a ui-sref="about" ui-sref-active="active">About</a></li>
+      <li><a ui-sref="dorms" ui-sref-active="active">Dorms</a></li>
+      <li><a ui-sref="events" ui-sref-active="active">Events</a></li>
+    </ul>
+  </header>
 </div>
+<div ui-view></div>
