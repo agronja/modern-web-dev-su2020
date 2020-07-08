@@ -1,15 +1,15 @@
 var app = {
     templateUrl: './app.html',
-    //controller: 'AppController'
+    controller: 'AppController'
 };
 
-angular 
+angular
     .module('common')
     .component('app', app)
     .config(function($stateProvider) {
         $stateProvider
             .state('app', {
-                redirectTo: 'home',
+              //  redirectTo: 'home',
                 url: '/',
                 componenet: 'app'
         })
