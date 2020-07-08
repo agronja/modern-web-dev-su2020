@@ -1,5 +1,7 @@
 angular
   .module('components', [
-    'components.contact',
-    'components.auth'
+    'components.about',
+    'components.dormEvents',
+    'components.dorms',
+    'components.home'
   ]);
