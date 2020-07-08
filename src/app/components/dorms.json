@@ -1,183 +1,181 @@
-{
-  "Dorms": [{
-      "Name": "Alumni",
-      "Year": 1931,
-      "Capacity": 225,
-      "Mascot": "Dawgs"
-    },
-    {
-      "Name": "Badin",
-      "Year": 1897,
-      "Capacity": 140,
-      "Mascot": "Bullfrogs"
-    },
-    {
-      "Name": "Breen-Phillips",
-      "Year": 1939,
-      "Capacity": 192,
-      "Mascot": "Babes"
-    },
-    {
-      "Name": "Carroll",
-      "Year": 1906,
-      "Capacity": 102,
-      "Mascot": "Vermin"
-    },
-    {
-      "Name": "Cavanaugh",
-      "Year": 1936,
-      "Capacity": 211,
-      "Mascot": "Chaos"
-    },
-    {
-      "Name": "Dillon",
-      "Year": 1931,
-      "Capacity": 290,
-      "Mascot": "Big Red"
-    },
-    {
-      "Name": "Duncan",
-      "Year": 2008,
-      "Capacity": 232,
-      "Mascot": "Highlanders"
-    },
-    {
-      "Name": "Dunne",
-      "Year": 2016,
-      "Capacity": 221,
-      "Mascot": "Sentinels"
-    },
-    {
-      "Name": "Farley",
-      "Year": 1947,
-      "Capacity": 216,
-      "Mascot": "Angels"
-    },
-    {
-      "Name": "Fisher",
-      "Year": 1952,
-      "Capacity": 183,
-      "Mascot": "Green Wave"
-    },
-    {
-      "Name": "Flaherty",
-      "Year": 2016,
-      "Capacity": 226,
-      "Mascot": "Bears"
-    },
-    {
-      "Name": "Howard",
-      "Year": 1924,
-      "Capacity": 154,
-      "Mascot": "256"
-    },
-    {
-      "Name": "Keenan",
-      "Year": 1957,
-      "Capacity": 250,
-      "Mascot": "Knights"
-    },
-    {
-      "Name": "Keough",
-      "Year": 1996,
-      "Capacity": 271,
-      "Mascot": "Kangaroos"
-    },
-    {
-      "Name": "Knott",
-      "Year": 1988,
-      "Capacity": 240,
-      "Mascot": "Juggerknotts"
-    },
-    {
-      "Name": "Lewis",
-      "Year": 1965,
-      "Capacity": 279,
-      "Mascot": "Chicks"
-    },
-    {
-      "Name": "Lyons",
-      "Year": 1925,
-      "Capacity": 183,
-      "Mascot": "Lions"
-    },
-    {
-      "Name": "McGlinn",
-      "Year": 1997,
-      "Capacity": 284,
-      "Mascot": "Shamrocks"
-    },
-    {
-      "Name": "Morrissey",
-      "Year": 1925,
-      "Capacity": 232,
-      "Mascot": "The Manor"
-    },
-    {
-      "Name": "O'Neill",
-      "Year": 1996,
-      "Capacity": 266,
-      "Mascot": "Angry Mob"
-    },
-    {
-      "Name": "Pasquerilla East",
-      "Year": 1981,
-      "Capacity": 248,
-      "Mascot": "Pyros"
-    },
-    {
-      "Name": "Pasquerilla West",
-      "Year": 1981,
-      "Capacity": 258,
-      "Mascot": "Purple Weasels"
-    },
-    {
-      "Name": "Ryan",
-      "Year": 2009,
-      "Capacity": 267,
-      "Mascot": "Wildcats"
-    },
-    {
-      "Name": "St. Edward's",
-      "Year": 1882,
-      "Capacity": 158,
-      "Mascot": "Gentlemen"
-    },
-    {
-      "Name": "Siegfried",
-      "Year": 1988,
-      "Capacity": 252,
-      "Mascot": "Ramblers"
-    },
-    {
-      "Name": "Sorin",
-      "Year": 1888,
-      "Capacity": 146,
-      "Mascot": "Otters"
-    },
-    {
-      "Name": "Stanford",
-      "Year": 1957,
-      "Capacity": 234,
-      "Mascot": "Griffins"
-    },
-    {
-      "Name": "Walsh",
-      "Year": 1909,
-      "Capacity": 160,
-      "Mascot": "Wild Women"
-    },
-    {
-      "Name": "Welsh Family",
-      "Year": 1997,
-      "Capacity": 281,
-      "Mascot": "Whirlwinds"
-    },
-    {
-      "Name": "Zahm",
-      "Year": 1937,
-      "Capacity": 202,
-      "Mascot": "Zahmbies"
-    }
-  ]
-}
+[{
+    "Name": "Alumni",
+    "Year": 1931,
+    "Capacity": 225,
+    "Mascot": "Dawgs"
+  },
+  {
+    "Name": "Badin",
+    "Year": 1897,
+    "Capacity": 140,
+    "Mascot": "Bullfrogs"
+  },
+  {
+    "Name": "Breen-Phillips",
+    "Year": 1939,
+    "Capacity": 192,
+    "Mascot": "Babes"
+  },
+  {
+    "Name": "Carroll",
+    "Year": 1906,
+    "Capacity": 102,
+    "Mascot": "Vermin"
+  },
+  {
+    "Name": "Cavanaugh",
+    "Year": 1936,
+    "Capacity": 211,
+    "Mascot": "Chaos"
+  },
+  {
+    "Name": "Dillon",
+    "Year": 1931,
+    "Capacity": 290,
+    "Mascot": "Big Red"
+  },
+  {
+    "Name": "Duncan",
+    "Year": 2008,
+    "Capacity": 232,
+    "Mascot": "Highlanders"
+  },
+  {
+    "Name": "Dunne",
+    "Year": 2016,
+    "Capacity": 221,
+    "Mascot": "Sentinels"
+  },
+  {
+    "Name": "Farley",
+    "Year": 1947,
+    "Capacity": 216,
+    "Mascot": "Angels"
+  },
+  {
+    "Name": "Fisher",
+    "Year": 1952,
+    "Capacity": 183,
+    "Mascot": "Green Wave"
+  },
+  {
+    "Name": "Flaherty",
+    "Year": 2016,
+    "Capacity": 226,
+    "Mascot": "Bears"
+  },
+  {
+    "Name": "Howard",
+    "Year": 1924,
+    "Capacity": 154,
+    "Mascot": "256"
+  },
+  {
+    "Name": "Keenan",
+    "Year": 1957,
+    "Capacity": 250,
+    "Mascot": "Knights"
+  },
+  {
+    "Name": "Keough",
+    "Year": 1996,
+    "Capacity": 271,
+    "Mascot": "Kangaroos"
+  },
+  {
+    "Name": "Knott",
+    "Year": 1988,
+    "Capacity": 240,
+    "Mascot": "Juggerknotts"
+  },
+  {
+    "Name": "Lewis",
+    "Year": 1965,
+    "Capacity": 279,
+    "Mascot": "Chicks"
+  },
+  {
+    "Name": "Lyons",
+    "Year": 1925,
+    "Capacity": 183,
+    "Mascot": "Lions"
+  },
+  {
+    "Name": "McGlinn",
+    "Year": 1997,
+    "Capacity": 284,
+    "Mascot": "Shamrocks"
+  },
+  {
+    "Name": "Morrissey",
+    "Year": 1925,
+    "Capacity": 232,
+    "Mascot": "The Manor"
+  },
+  {
+    "Name": "O'Neill",
+    "Year": 1996,
+    "Capacity": 266,
+    "Mascot": "Angry Mob"
+  },
+  {
+    "Name": "Pasquerilla East",
+    "Year": 1981,
+    "Capacity": 248,
+    "Mascot": "Pyros"
+  },
+  {
+    "Name": "Pasquerilla West",
+    "Year": 1981,
+    "Capacity": 258,
+    "Mascot": "Purple Weasels"
+  },
+  {
+    "Name": "Ryan",
+    "Year": 2009,
+    "Capacity": 267,
+    "Mascot": "Wildcats"
+  },
+  {
+    "Name": "St. Edward's",
+    "Year": 1882,
+    "Capacity": 158,
+    "Mascot": "Gentlemen"
+  },
+  {
+    "Name": "Siegfried",
+    "Year": 1988,
+    "Capacity": 252,
+    "Mascot": "Ramblers"
+  },
+  {
+    "Name": "Sorin",
+    "Year": 1888,
+    "Capacity": 146,
+    "Mascot": "Otters"
+  },
+  {
+    "Name": "Stanford",
+    "Year": 1957,
+    "Capacity": 234,
+    "Mascot": "Griffins"
+  },
+  {
+    "Name": "Walsh",
+    "Year": 1909,
+    "Capacity": 160,
+    "Mascot": "Wild Women"
+  },
+  {
+    "Name": "Welsh Family",
+    "Year": 1997,
+    "Capacity": 281,
+    "Mascot": "Whirlwinds"
+  },
+  {
+    "Name": "Zahm",
+    "Year": 1937,
+    "Capacity": 202,
+    "Mascot": "Zahmbies"
+  }
+]
