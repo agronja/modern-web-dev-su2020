@@ -1,6 +1,6 @@
-angular.module('app', ['ngMaterial', 'ngMessages']);
+angular.module('app', ['home', 'about', 'dorms', 'dormEvents']);
 
-/*--------------------- Home Component ---------------------*/
+/*--------------------- Home Component ---------------------
 const home = {
   templateUrl: 'app/home.html',
   controller: 'HomeController'
@@ -21,9 +21,9 @@ angular.module('app').controller('HomeController', ['DormService', function(Dorm
 
 }]);
 
-/*--------------------- Home Component ---------------------*/
+/*--------------------- Home Component ---------------------
 
-/*--------------------- Dorms Component ---------------------*/
+/*--------------------- Dorms Component ---------------------
 const dorms = {
   templateUrl: 'app/dorm.html',
   controller: 'DormsController'
@@ -48,7 +48,7 @@ function DormsController(DormService) {
                   ctrl.sel = x;
                   break;
               }
-              //if no match is found, print out this 
+              //if no match is found, print out this
               else {
                   ctrl.sel = {
                       "name": "Not found",
@@ -57,7 +57,7 @@ function DormsController(DormService) {
                       "mascot": "N/A"
                   }
               }
-                
+
           }
       })
   }
@@ -65,9 +65,9 @@ function DormsController(DormService) {
 }
 DormsController.$inject = ['DormService'];
 angular.module('app').controller('DormsController', DormsController);
-/*--------------------- Dorms Component ---------------------*/
+/*--------------------- Dorms Component ---------------------
 
-/*--------------------- Dorm Service ---------------------*/
+/*--------------------- Dorm Service ---------------------
 function DormService($http) {
   // Services are Singletons
   // Properties

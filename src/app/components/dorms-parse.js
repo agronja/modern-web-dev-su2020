@@ -1,12 +1,12 @@
 // search through the dorm data to find the requested dorm
 Parse.initialize("myAppID");
-Parse.serverURL = 'https://';
+Parse.serverURL = 'https://parseapi.back4app.com/';
 
 // objects for the list of dorms
 var Dorms = Parse.Object.extend("Dorms");
 var Dorm = Parse.Object.extend("Dorm");
 
-//go through each dorm 
+//go through each dorm
 var q = new Parse.Query("Dorm");
 q.find().then(function(specificDorm) {
     for (var i = 0; i < specifcDorm.length; i++){
@@ -14,12 +14,11 @@ q.find().then(function(specificDorm) {
         //get data corresponding to the dormName
         var dormsTemplate = {
 	       template: `
-		      <div> 
-                <h3> dormName.name</h3>
-                <p>"Founded in the year" + dormName.date</p>
-                <p>"Capacity of " + dormName.capacity</p>
-                <p>"Their mascot is the " dormName.mascot</p>
-                <p>dormName.location</p>
+		      <div>
+                <h3> dormName.Name</h3>
+                <p>"Founded in the year" + dormName.Date</p>
+                <p>"Capacity of " + dormName.Capacity</p>
+                <p>"Their mascot is the " dormName.Mascot</p>
               </div>
             `
         };
@@ -37,7 +36,7 @@ q.find().then(function(specificDorm) {
 				        }
 				    }
 			     });
-	       }); 
+	       });
     //repeat cycle
     }
 });
