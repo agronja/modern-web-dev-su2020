@@ -1,7 +1,7 @@
 angular
   .module('components', [
-    'about',
-    'events',
-    'dorms',
-    'home'
+    //'about',
+    //'events',
+    //'dorms',
+    //'home'
   ]);
