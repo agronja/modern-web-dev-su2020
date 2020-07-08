@@ -5,8 +5,8 @@ angular
   ])
 
     .config(function($locationProvider, ParseProvider) {
-        var MY_PARSE_APP_ID = 'jHqsqPKdcgNS2uolToydrK8ZrDvAUTCjSdlDKDNb';
-        var MY_PARSE_JS_KEY = 'DsXsf8ASScwqMVEuNxtKfoPNfGXhgTuAbpPpC4X0';
+        var MY_PARSE_APP_ID = 'Xm5mvESVMpYL3fhQVoY3CufO9iRrWsVhl8Qr1RYp';
+        var MY_PARSE_JS_KEY = 'ivH9AWT51N75391o5tgHv8gEhWiVEXbl82WeGqyX';
         ParseProvider.initialize(MY_PARSE_APP_ID, MY_PARSE_JS_KEY);
-        ParseProvider.serverURL = 'https://...back4app.com/';
+        ParseProvider.serverURL = 'https://parseapi.back4app.com/';
 });
