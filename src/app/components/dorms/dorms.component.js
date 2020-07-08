@@ -1,4 +1,8 @@
 var dorms = {
+    
+    bindings: {
+        list: '<'
+    },
 	template: `
 		<div class="dorms">
 			<div class="dorms-methods">
@@ -7,7 +11,19 @@ var dorms = {
 			</div>
 			<div class="dorms-details" ui-view="details"></div>
 		</div>
-	`
+	`,
+    
+    controller: function DormsController($scope, $element, $attrs, dormsService) {
+        var ctrl = this;
+        ctrl.type = []
+        
+        // get data from service
+        dormsService.getDormsData().then(function(response) {
+            console.log("success")
+            ctrl.types = response.data;
+        });
+        
+    }
 };
 
 angular
