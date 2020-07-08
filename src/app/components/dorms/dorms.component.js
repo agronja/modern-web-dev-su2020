@@ -1,8 +1,4 @@
 var dorms = {
-    
-    bindings: {
-        list: '<'
-    },
 	template: `
 		<div class="dorms">
 			<div class="dorms-methods">
@@ -41,6 +37,7 @@ angular
 					'methods@dorms': {
 						component: 'dormsMethods'
 					}
-				}
+				},
+                parent: 'app'
 			});
 	});
