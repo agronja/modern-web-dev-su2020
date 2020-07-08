@@ -37,3 +37,6 @@ function init($rootScope, $uiRouter, $mdSidenav, $timeout, $log) {
     
 }
 
+angular
+    .module('common')
+    .run(init)
