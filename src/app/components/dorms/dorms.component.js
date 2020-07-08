@@ -28,16 +28,8 @@ angular
 	.config(function ($stateProvider) {
 		$stateProvider
 			.state('dorms', {
-				url: '/dorms',
-				views: {
-					// default view
-					'@': {
-						component: 'dorms'
-					},
-					'methods@dorms': {
-						component: 'dormsMethods'
-					}
-				},
+				url: 'dorms',
+				component: 'dorms',
                 parent: 'app'
-			});
+			})
 	});

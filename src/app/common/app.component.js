@@ -1,6 +1,6 @@
 var app = {
     templateUrl: './app.html',
-    controller: 'AppController'
+    //controller: 'AppController'
 };
 
 angular 

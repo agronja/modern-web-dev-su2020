@@ -11,7 +11,6 @@ angular
             .state('home', {
                 url: '/',
                 component: 'home'
-                // template: '<home></home>'
         })
     $urlRouterProvider.otherwise('/');
 });
