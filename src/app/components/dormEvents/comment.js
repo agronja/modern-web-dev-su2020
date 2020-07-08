@@ -6,6 +6,7 @@ var Post = Parse.Object.extend("Post");
 
 var post = new Post();
 
+// NEEDS TO BE CHANGED: take data from user input
 var data = {
     "body": "Hi", 
     "tags": ["first-post", "welcome"],
@@ -19,7 +20,7 @@ post.save(data, {
         
         var Comment = Parse.Object.extend("Comment");
         var comment = new Comment();
-        comment.set("message", "This is a great post");
+        comment.set("message", "Thanks for your vote");
         comment.set("parent", post);
         
         comment.save(null, {

@@ -15,8 +15,6 @@ function onError(err) {
 };
 
 onReady()
-    .then(onReady,onError)
-    .then(onReady,onError)
     .then(onReady,onError);
 
 console.log("onReady() called");
