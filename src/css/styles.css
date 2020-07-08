@@ -2,19 +2,19 @@
 body {
    padding-top: 50px;
    padding-left: 600px;
-   background-image: url(../img/nd.jpg);
+   /* background-image: url(../img/nd.jpg); */
    background-repeat: no-repeat;
    background-size: cover;
-   color: white;
+   /* color: white; */
    font-family: 'Raleway', sans-serif;
-   color: rgb(213, 229, 245);
-   text-shadow: 2px 1px #666;
+   /* color: rgb(213, 229, 245);
+   text-shadow: 2px 1px #666; */
 }
 /*title syles*/
 h1 {
-   text-decoration: underline; 
+   text-decoration: underline;
    font-style:italic;
-   color: rgb(73, 124,339);
+   /* color: rgb(73, 124,339); */
 }
 /*table outline*/
 table {
@@ -22,7 +22,7 @@ table {
     width: 50%;
     background-color: lightsteelblue;
     box-shadow: 10px 10px 10px lightgrey;
-    color: white;
+    /* color: white; */
 }
 /*white table outline*/
 table, tr, td {
@@ -52,5 +52,5 @@ tr, td {
     body {
         text-align: center;
     }
-    
+
 }
