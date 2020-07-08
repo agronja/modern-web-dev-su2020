@@ -14,6 +14,14 @@ New(obj) {
     }
 }
 
+getById(id) {
+    return new this.Parse.Query(this.New())
+        .get(id)
+        .then(result => {
+            this.Parse.defineAttributes(result)  
+    })
+}
+
 
 
 angular
