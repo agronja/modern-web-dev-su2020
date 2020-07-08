@@ -2,13 +2,9 @@
 body {
    padding-top: 3vw;
    padding-left: 3vw;
-   /* background-image: url(../img/nd.jpg); */
    background-repeat: no-repeat;
    background-size: cover;
-   /* color: white; */
    font-family: 'Raleway', sans-serif;
-   /* color: rgb(213, 229, 245);
-   text-shadow: 2px 1px #666; */
 }
 /*title syles*/
 h1 {
@@ -22,7 +18,6 @@ table {
     width: 50%;
     background-color: lightsteelblue;
     box-shadow: 10px 10px 10px lightgrey;
-    /* color: white; */
 }
 /*white table outline*/
 table, tr, td {
