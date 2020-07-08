@@ -180,13 +180,6 @@ gulp.task('copy-img', () => {
         .pipe(gulp.dest(dist + '/img'));
 });
 
-// copy json
-gulp.task('copy-json', () => {
-    return gulp
-        .src('src/json/**/*')
-        .pipe(gulp.dest(dist + '/json'));
-});
-
 // copy fonts
 gulp.task('copy-fonts', () => {
     return gulp
@@ -211,10 +204,10 @@ gulp.task('connect-app', () => {
 //     });
 // });
 
-gulp.task('default', gulp.series('clean', 'scripts', 'styles', 'copy-html', 'copy-img', 'copy-fonts', 'copy-json', 'connect-app', (done) => {
+gulp.task('default', gulp.series('clean', 'scripts', 'styles', 'copy-html', 'copy-img', 'copy-fonts', 'connect-app', (done) => {
     done();
 }));
 
-gulp.task('production', gulp.series('clean', 'scripts', 'styles', 'copy-html', 'copy-img', 'copy-fonts', 'copy-json', (done) => {
+gulp.task('production', gulp.series('clean', 'scripts', 'styles', 'copy-html', 'copy-img', 'copy-fonts', (done) => {
     done();
 }));
