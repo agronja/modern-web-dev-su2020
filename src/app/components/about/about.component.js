@@ -9,7 +9,8 @@ angular
     .config(function ($stateProvider) {
         $stateProvider
             .state('about', {
-                url: '/about',
+                parent: 'app',
+                url: 'about',
                 component: 'about'
         })
 });

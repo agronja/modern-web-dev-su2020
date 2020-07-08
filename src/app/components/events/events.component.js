@@ -9,7 +9,8 @@ angular
     .config(function ($stateProvider) {
         $stateProvider
             .state('events', {
-                url: '/events',
+                parent: 'app',
+                url: 'events',
                 component: 'events'
         })
 });
