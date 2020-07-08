@@ -11,6 +11,6 @@ angular
             .state('app', {
               //  redirectTo: 'home',
                 url: '/',
-                componenet: 'app'
+                component: 'app'
         })
 });

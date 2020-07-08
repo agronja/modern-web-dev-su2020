@@ -1,7 +1,7 @@
 angular
   .module('components', [
     'about',
-    'dormEvents',
+    'events',
     'dorms',
     'home'
   ]);
