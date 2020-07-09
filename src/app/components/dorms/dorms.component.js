@@ -1,7 +1,6 @@
 var dorms = {
-	template: `
-		<div class="dorms">Dorms</div>
-	`
+	templateUrl: './dorms.html',
+	controller: 'DormsController'
 };
 
 angular

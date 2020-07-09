@@ -1,6 +1,5 @@
 var events = {
-    template: `
-        <div class="events">Events</div>`
+    templateUrl: './events.html'
 };
 
 angular

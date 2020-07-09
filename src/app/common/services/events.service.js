@@ -36,22 +36,6 @@ class eventsService {
       })
       .catch(error => Promise.reject(error))
   }
-
-  getById(id) {
-    console.log('id test')
-    return new this.Parse.Query(this.New())
-      .get(id)
-      .then(result => {
-        console.log('result', result)
-        console.log('pre define id')
-        this.Parse.defineAttributes(result, this.fields)
-        this.data = result
-        console.log('post define id')
-
-        return Promise.resolve(result)
-      })
-      .catch(error => {console.log('reject') Promise.reject(error)})
-  }
 }
 
 angular
