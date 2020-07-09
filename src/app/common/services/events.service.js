@@ -27,7 +27,7 @@ class eventsService {
 
   getAll(){
     return new this.Parse.Query(this.New())
-      .find(result => {
+      .find(results => {
         results.forEach(result => {
           this.Parse.defineAttributes(result, this.fields)
         })

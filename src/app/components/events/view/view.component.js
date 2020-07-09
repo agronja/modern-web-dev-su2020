@@ -14,7 +14,7 @@ angular
             .state('view', {
                 parent: 'events',
                 url: '/view',
-                component: 'view'
+                component: 'view',
                 resolve: {
                   events: function(eventsService) {
                     return eventsService.getAll()

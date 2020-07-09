@@ -23,7 +23,7 @@ angular
                            }
                         else {
 						console.log('load from network');
-						return dormsService.getById('name')
+						return dormsService.getById('Keenan')
                         }
 					}
 				}
