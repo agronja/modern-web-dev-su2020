@@ -1,4 +1,6 @@
 angular
 	.module('events', [
-		'ui.router'
+		'ui.router',
+		'add',
+		'view'
 	]);
