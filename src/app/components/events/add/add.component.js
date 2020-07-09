@@ -10,7 +10,7 @@ angular
         $stateProvider
             .state('add', {
                 parent: 'events',
-                url: 'add',
+                url: '/add',
                 component: 'add'
         })
 });

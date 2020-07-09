@@ -10,7 +10,7 @@ angular
         $stateProvider
             .state('view', {
                 parent: 'events',
-                url: 'view',
+                url: '/view',
                 component: 'view'
         })
 });
