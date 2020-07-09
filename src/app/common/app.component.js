@@ -1,3 +1,4 @@
+//component for the parent component to the components in the components folder
 var app = {
     templateUrl: './app.html',
     controller: 'AppController'

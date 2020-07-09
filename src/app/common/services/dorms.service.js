@@ -1,3 +1,4 @@
+//the service for using and getting the data concerning the dorms on the server
 class dormsService {
 
   constructor(Parse){

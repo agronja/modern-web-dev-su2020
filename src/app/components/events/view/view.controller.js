@@ -1,3 +1,4 @@
+//controller for the view of the events component
 function ViewController($state){
   const ctrl = this;
 

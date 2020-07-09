@@ -5,7 +5,7 @@ In v0.2 we restructured our code with component architecture and got it to work 
 
 ## Bug Fixes
 
-TBD
+fixed errors concerning undefined elements that the gulp file returned
 
 ## Contributors
 
@@ -14,5 +14,5 @@ Mark Cheng, Josh Agron
 ## Features
 
 * Added dorm event submission functionality: You can now submit dorm events!
-* Component architecture?
-* Gulp?
+* Added multiple routed components and dynamic routes
+* used parse to retrive and display data stored on a server

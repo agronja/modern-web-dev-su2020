@@ -1,6 +1,6 @@
+//component for the home tab
 var home = {
-    template: `
-        <div class="home">Home</div>`
+    templateUrl: './home.html'
 };
 
 angular

@@ -1,3 +1,4 @@
+// service for using and getting the events found on the server
 class eventsService {
 
   constructor(Parse){

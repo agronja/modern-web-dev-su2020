@@ -1,14 +1,15 @@
+<!--template for the events which prints all the events stored on the server-->
 <div class="view">
   <h1>See All Events</h1>
   <ul>
-
+    <!--repeating through each event and printing outs its attributes-->
     <li ng-repeat="item in $ctrl.events">
-      Event: {{ item.get('Title') }}
-      Date: {{ item.get('Date') }}
-      Submitted by: {{ item.get('Author') }}
-      Dorm: {{ item.get('Dorm') }}
-      Body: {{ item.get('Body') }}
-
+      Event: {{ item.get('Title') }} <br />
+      Date: {{ item.get('Date') }} <br />
+      Submitted by: {{ item.get('Author') }} <br />
+      Dorm: {{ item.get('Dorm') }} <br />
+      Body: {{ item.get('Body') }} <br />
+      <hr />
     </li>
   </ul>
 </div>

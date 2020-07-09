@@ -1,3 +1,4 @@
+//component for the events tab
 var view = {
     templateUrl: './view.html',
     controller: 'ViewController',

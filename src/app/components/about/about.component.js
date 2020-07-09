@@ -1,6 +1,6 @@
+//component for the about tab
 var about = {
-    template: `
-        <div class="about">About</div>`
+    templateUrl: './about.html'
 };
 
 angular
