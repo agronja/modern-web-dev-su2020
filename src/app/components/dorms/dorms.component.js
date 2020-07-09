@@ -14,11 +14,17 @@ angular
 			.state('dorms', {
 				url: 'dorms',
 				component: 'dorms',
-        parent: 'app',
+                parent: 'app',
 				resolve: {
 					dorms: function(dormsService){
-						console.log('load from network')
-						return dormsService.getAll()
+                        if(!$rootScope.isEmpty(dormService.data)) {
+                           console.log('load from app!');
+                           return dormService.data;
+                           }
+                        else {
+						console.log('load from network');
+						return dormsService.getById('name')
+                        }
 					}
 				}
 			})
