@@ -78,5 +78,5 @@ tr, td {
 }
 
 .events li a.active {
-  border-bottom-color: #337ab7;
+  border-bottom-color: red;
 }

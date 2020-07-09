@@ -1,6 +1,5 @@
 var view = {
-    template: `
-        <div class="view">view</div>`
+    templateUrl: './view.html'
 };
 
 angular

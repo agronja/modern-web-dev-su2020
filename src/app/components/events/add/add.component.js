@@ -1,6 +1,5 @@
 var add = {
-    template: `
-        <div class="add">add</div>`
+    templateUrl: './add.html'
 };
 
 angular
