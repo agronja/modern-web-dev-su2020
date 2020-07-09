@@ -1,1 +1,14 @@
-<div class="view">View</div>
+<div class="view">
+  <h1>See All Events</h1>
+  <ul>
+
+    <li ng-repeat="item in $ctrl.list">
+      Event: {{ item.get('Title') }}
+      Date: {{ item.get('Date') }}
+      Submitted by: {{ item.get('Author') }}
+      Dorm: {{ item.get('Dorm') }}
+      Body: {{ item.get('Body') }}
+
+    </li>
+  </ul>
+</div>

@@ -1,5 +1,9 @@
 var view = {
-    templateUrl: './view.html'
+    templateUrl: './view.html',
+    controller: 'ViewController',
+    bindings: {
+      events: '<'
+    }
 };
 
 angular
@@ -11,5 +15,10 @@ angular
                 parent: 'events',
                 url: '/view',
                 component: 'view'
+                resolve: {
+                  events: function(eventsService) {
+                    return eventsService.getAll()
+                  }
+                }
         })
 });
