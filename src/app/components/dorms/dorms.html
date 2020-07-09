@@ -1,16 +1,14 @@
 <div class="dorms">
-  <h1>Search for Dorms</h1>
-  <form ng-submit="$ctrl.searchDorms()">
-    <h2>Search Dorms</h2>
+    <h2>Dorms</h2>
+    <p ng-model="$ctrl.getAll">
     <ul>
-      <li>Name:
+      <li>
         <input type="text" id="name" ng-model="$ctrl.name" />
       </li>
       <li>
         <input class="submit" type="submit" value="search Dorm" />
       </li>
     </ul>
-  </form>
   <ul>
     <li ng-repeat="item in $ctrl.list">
       Name: {{item.get('Name')}}
