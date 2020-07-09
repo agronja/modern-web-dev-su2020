@@ -1,6 +1,9 @@
 var dorms = {
 	templateUrl: './dorms.html',
-	controller: 'DormsController'
+	controller: 'DormsController',
+	bindings: {
+		dorms: '<'
+	}
 };
 
 angular
@@ -11,6 +14,12 @@ angular
 			.state('dorms', {
 				url: 'dorms',
 				component: 'dorms',
-        parent: 'app'
+        parent: 'app',
+				resolve: {
+					dorms: function(dormsService){
+						console.log('load from network')
+						return dormsService.getAll()
+					}
+				}
 			})
 	});

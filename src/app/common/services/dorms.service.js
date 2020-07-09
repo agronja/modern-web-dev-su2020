@@ -35,6 +35,17 @@ class dormsService {
       })
       .catch(error => Promise.reject(error))
   }
+
+  getById(id){
+    return new this.Parse.Query(this.New())
+      .get(id)
+      .then(result => {
+        this.Parse.defineAttributes(result, tihs.fields);
+        this.data = result;
+        return Promise.resolve(result);
+      })
+      .catch(error => Promise.reject(error));
+  }
 }
 
 angular
