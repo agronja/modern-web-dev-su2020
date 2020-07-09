@@ -1,20 +1,11 @@
 <div class="dorms">
     <h2>Dorms</h2>
-    <p ng-model="$ctrl.getAll">
     <ul>
-      <li>
-        <input type="text" id="name" ng-model="$ctrl.name" />
-      </li>
-      <li>
-        <input class="submit" type="submit" value="search Dorm" />
+      <li ng-repeat="item in $ctrl.dorms">
+        Dorm: {{ item.get('Name') }}
+        Year Established: {{ item.get('Year') }}
+        Max Capacity: {{ item.get('Capacity') }}
+        Mascot: {{ item.get('Mascot') }}
       </li>
     </ul>
-  <ul>
-    <li ng-repeat="item in $ctrl.list">
-      Name: {{item.get('Name')}}
-      Year Established: {{item.get('Year')}}
-      Maximum Capacity: {{item.get('Capacity')}}
-      Mascot: {{item.get('Mascot')}}
-    </li>
-  </ul>
 </div>

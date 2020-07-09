@@ -1,12 +1,12 @@
 function DormsController($state) {
     const ctrl = this;
-
+/*
     ctrl.getAll = $state.getAll;
     console.log(ctrl.getAll);
-
+*/
     ctrl.$onInit = function(){
-      console.log("found the following dorm: ", ctrl.dorms)
-
+      console.log("found the following dorms: ", ctrl.dorms)
+/*
       ctrl.searchDorms = function() {
         ctrl.list = new Array()
 
@@ -16,6 +16,7 @@ function DormsController($state) {
           }
         }
       }
+*/
     }
 }
 
