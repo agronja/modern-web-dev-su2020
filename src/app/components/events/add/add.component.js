@@ -1,5 +1,9 @@
 var add = {
-    templateUrl: './add.html'
+    templateUrl: './add.html',
+    controller: 'AddController',
+    bindings: {
+      newEvent: '<'
+    }
 };
 
 angular
@@ -10,6 +14,11 @@ angular
             .state('add', {
                 parent: 'events',
                 url: '/add',
-                component: 'add'
+                component: 'add',
+                resolve: {
+                  newEvent: function(eventsService) {
+                    return eventsService.New()
+                  }
+                }
         })
 });

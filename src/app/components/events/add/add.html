@@ -1,1 +1,33 @@
-<div class="add">Add</div>
+<div class="add">
+  <form ng-submit="$ctrl.addEvent()">
+    <fieldset class="event">
+      <h2>Add Event</h2>
+      <ul>
+        <li>Name:
+          <input ng-model="$ctrl.author" type="text" id="author">
+        </li>
+        <br>
+        <li>Dorm:
+          <input ng-model="$ctrl.dorm" type="text" id="dorm">
+        </li>
+        <br>
+        <li>Event Title:
+          <input ng-model="$ctrl.title" type="text" id="title">
+        </li>
+        <br>
+        <li>Event Date:
+          <input ng-model="$ctrl.date" type="text" id="date">
+        </li>
+        <br>
+        <li>Short Description of the Event:
+          <input ng-model="$ctrl.body" type="text" id="body">
+        </li>
+        <br>
+        <li>
+          <input type="submit" value="submit" >
+        </li>
+      </ul>
+    </fieldset>
+
+  </form>
+</div>
