@@ -3,7 +3,7 @@ function DormsController() {
     
     dormsService.getAll().then(function(dorm_data) {
         ctrl.dorm_data = dorm_data;
-        ctrl.dorms_info = ctrl.dorm_data.data;
+        
     });
 }
 
