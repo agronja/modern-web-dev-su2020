@@ -12,6 +12,9 @@ angular
             .state('app', {
               //  redirectTo: 'home',
                 url: '/',
-                component: 'app'
+                component: 'app',
+                data: {
+                  requiredAuth: true
+                }
         })
 });
