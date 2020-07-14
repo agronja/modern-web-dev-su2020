@@ -19,5 +19,5 @@ function RegisterController(AuthService, $state) {
 }
 
 angular
-  .module('components.auth')
+  .module('auth')
   .controller('RegisterController', RegisterController);

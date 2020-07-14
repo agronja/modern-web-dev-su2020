@@ -4,16 +4,16 @@ var login = {
 };
 
 angular
-  .module('components.auth')
+  .module('auth')
   .component('login', login)
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('auth', {
-        redirectTo: 'auth.login',
+        redirectTo: 'login',
         url: '/auth',
         template: '<div ui-view></div>'
       })
-      .state('auth.login', {
+      .state('login', {
         url: '/login',
         component: 'login'
       });
