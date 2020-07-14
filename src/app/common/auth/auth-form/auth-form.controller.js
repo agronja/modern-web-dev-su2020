@@ -15,5 +15,5 @@ function AuthFormController() {
 }
 
 angular
-  .module('components.auth')
+  .module('auth')
   .controller('AuthFormController', AuthFormController);

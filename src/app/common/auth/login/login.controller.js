@@ -19,5 +19,5 @@ function LoginController(AuthService, $state) {
 }
 
 angular
-  .module('components.auth')
+  .module('auth')
   .controller('LoginController', LoginController);

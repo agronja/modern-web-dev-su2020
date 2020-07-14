@@ -4,7 +4,7 @@ function AppController($state, AuthService) {
   ctrl.logout = function () {
     AuthService.logout().then(function () {
       //logged out
-      $state.go('auth.login');
+      $state.go('login');
     });
   }
 }

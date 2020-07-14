@@ -4,11 +4,11 @@ var register = {
 };
 
 angular
-  .module('components.auth')
+  .module('auth')
   .component('register', register)
   .config(function ($stateProvider) {
     $stateProvider
-      .state('auth.register', {
+      .state('register', {
         url: '/register',
         component: 'register'
       });

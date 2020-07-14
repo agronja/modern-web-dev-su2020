@@ -1,9 +1,9 @@
 angular
-  .module('components.auth', [
+  .module('auth', [
     'ui.router',
     'ngParse'
   ])
-  
+
   .run(function ($transitions, $state, AuthService) {
     $transitions.onStart({
       to: function (state) {
@@ -13,7 +13,7 @@ angular
       return AuthService
         .requireAuthentication()
         .catch(function () {
-          return $state.target('auth.login');
+          return $state.target('login');
         });
     });
     $transitions.onStart({

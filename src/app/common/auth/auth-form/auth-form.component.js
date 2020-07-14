@@ -10,5 +10,5 @@ var authForm = {
 };
 
 angular
-  .module('components.auth')
+  .module('auth')
   .component('authForm', authForm);

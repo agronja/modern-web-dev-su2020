@@ -57,5 +57,9 @@ class AuthService {
 
 }
 angular
+<<<<<<< HEAD:src/app/common/services/auth.service.js
   .module('common')
+=======
+  .module('auth')
+>>>>>>> 7fae7da9d795f3dfef65e0f27b2d2f253204d79d:src/app/common/auth/auth.service.js
   .service('AuthService', AuthService);
