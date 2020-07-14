@@ -3,11 +3,6 @@ angular
     'ui.router',
     'ngParse'
   ])
-  // 'angular-loading-bar'
-  //.run(function ($transitions,cfpLoadigBar) {
-  //  $transitions.onStart({}. cfpLoadigBar.start);
-  //  $transitions.onSuccess({}. cfpLoadigBar.complete);
-  //})
     //connecting our website to the server in Back4App
     .config(function($locationProvider, ParseProvider) {
         var MY_PARSE_APP_ID = 'Xm5mvESVMpYL3fhQVoY3CufO9iRrWsVhl8Qr1RYp';
