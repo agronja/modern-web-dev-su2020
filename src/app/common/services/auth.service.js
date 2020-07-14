@@ -42,5 +42,5 @@ function AuthService($firebaseAuth) {
 }
 
 angular
-  .module('components.auth')
+  .module('auth')
   .service('AuthService', AuthService);
