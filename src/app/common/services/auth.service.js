@@ -1,22 +1,37 @@
-function AuthService($firebaseAuth) {
-  var auth = $firebaseAuth();
-  var authData = null;
-  function storeAuthData(response) {
-    authData = response;
-    return authData;
+class AuthService {
+
+  constructor(Parse){
+    this.Parse = Parse
+    this.collection = []
+    this.authData = {}
   }
-  function onSignIn(user) {
+
+  New(obj) {
+    if(angular.isUndefined(obj)){
+      const parseObject = new this.Parse.Object(this.name)
+      this.Parse.defineAttributes(parseObject, this.fields)
+      return parseObject
+    } else {
+      this.Parse.defineAttributes(obj, this.fields)
+      return obj
+    }
+  }
+
+  onSignIn(user) {
     authData = user;
     return auth.$requireSignIn();
   }
-  function clearAuthData() {
+
+  clearAuthData() {
     authData = null;
   }
+
   this.login = function (user) {
     return auth
       .$signInWithEmailAndPassword(user.email, user.password)
       .then(storeAuthData);
   };
+
   this.register = function (user) {
     return auth
       .$createUserWithEmailAndPassword(user.email, user.password)
@@ -39,8 +54,8 @@ function AuthService($firebaseAuth) {
       return authData;
     }
   };
-}
 
+}
 angular
-  .module('components.auth')
+  .module('common')
   .service('AuthService', AuthService);
