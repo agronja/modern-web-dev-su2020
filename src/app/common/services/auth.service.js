@@ -18,7 +18,7 @@ class AuthService {
   }
 
   onSignIn(user) {
-    authData = user;
+    user = await Parse.User.logIn("myname", "mypass");
     return auth.$requireSignIn();
   }
 
