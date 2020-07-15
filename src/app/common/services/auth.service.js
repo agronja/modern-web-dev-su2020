@@ -23,6 +23,7 @@ class AuthService {
     return user
   }
 
+/* Do we need these two functions? Seems unnecessary with user.current() */
   function storeAuthData(response) {
     authData = response;
     return authData;
@@ -35,7 +36,6 @@ class AuthService {
   this.login = function (user) {
     return user
       .logIn(user.email, user.password)
-      // Do we need this if .logIn and .logOut has sessions on the disk? Like we can use current()
       .then(storeAuthData);
   };
 

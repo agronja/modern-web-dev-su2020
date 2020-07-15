@@ -1,5 +1,5 @@
 angular
-  .module('auth', [
+  .module('common', [
     'ui.router',
     'ngParse'
   ])
