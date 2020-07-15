@@ -18,12 +18,17 @@ class AuthService {
     }
   }
 
-  onSignIn(user) {
+  function onSignIn(user) {
     user = await Parse.User.logIn("myname", "mypass");
     return user
   }
 
-  clearAuthData() {
+  function storeAuthData(response) {
+    authData = response;
+    return authData;
+  }
+
+  function clearAuthData() {
     authData = null;
   }
 
@@ -58,5 +63,5 @@ class AuthService {
 }
 
 angular
-  .module('auth')
+  .module('common')
   .service('AuthService', AuthService)

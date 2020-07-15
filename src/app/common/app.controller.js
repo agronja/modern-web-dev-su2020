@@ -1,4 +1,4 @@
-function AppController($state /*, AuthService */) {
+function AppController($state , AuthService) {
   var ctrl = this;
   /*
   ctrl.user = AuthService.getUser();
