@@ -6,6 +6,7 @@ class AuthService {
     this.authData = {}
   }
 
+/* Can this be changed to signUp with the setEmail, setPassword, etc.? */
   New(obj) {
     if(angular.isUndefined(obj)){
       const parseObject = new this.Parse.Object(this.name)
@@ -19,7 +20,7 @@ class AuthService {
 
   onSignIn(user) {
     user = await Parse.User.logIn("myname", "mypass");
-    return auth.$requireSignIn();
+    return user
   }
 
   clearAuthData() {
@@ -27,32 +28,31 @@ class AuthService {
   }
 
   this.login = function (user) {
-    return auth
-      .$signInWithEmailAndPassword(user.email, user.password)
+    return user
+      .logIn(user.email, user.password)
+      // Do we need this if .logIn and .logOut has sessions on the disk? Like we can use current()
       .then(storeAuthData);
   };
 
   this.register = function (user) {
-    return auth
-      .$createUserWithEmailAndPassword(user.email, user.password)
+    return user
+      .signUp(user.email, user.password, user.username, user.dorm)
       .then(storeAuthData);
   };
   this.logout = function () {
-    return auth
-      .$signOut()
+    return user
+      .logOut()
       .then(clearAuthData);
   };
   this.requireAuthentication = function () {
-    return auth
+    return user
       .$waitForSignIn().then(onSignIn);
   };
   this.isAuthenticated = function () {
-    return !!authData;
+    return user.authenticated();
   };
   this.getUser = function () {
-    if (authData) {
-      return authData;
-    }
+    return user.current();
   };
 
 }
