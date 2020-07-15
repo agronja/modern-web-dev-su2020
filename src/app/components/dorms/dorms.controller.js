@@ -5,7 +5,6 @@ function DormsController($state) {
     console.log(ctrl.getAll);
 */
     ctrl.$onInit = function(){
-      console.log("found the following dorms: ", ctrl.dorms)
 
       ctrl.searchDorms = function() {
         ctrl.list = new Array()

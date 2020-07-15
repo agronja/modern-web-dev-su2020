@@ -3,7 +3,6 @@ function ViewController($state){
   const ctrl = this;
 
   ctrl.$onInit = function() {
-    console.log("found the following events: ", ctrl.events)
 /*
     ctrl.searchEvents = function() {
       ctrl.list = new Array()

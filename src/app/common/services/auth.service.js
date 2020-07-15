@@ -56,6 +56,7 @@ class AuthService {
   };
 
 }
+
 angular
   .module('auth')
   .service('AuthService', AuthService)

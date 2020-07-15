@@ -1,5 +1,6 @@
-function AppController($state, AuthService) {
+function AppController($state /*, AuthService */) {
   var ctrl = this;
+  /*
   ctrl.user = AuthService.getUser();
   ctrl.logout = function () {
     AuthService.logout().then(function () {
@@ -7,6 +8,7 @@ function AppController($state, AuthService) {
       $state.go('login');
     });
   }
+  */
 }
 
 
