@@ -1,7 +1,7 @@
 angular
-  .module('common', [
+  .module('auth', [
     'ui.router',
-    'ngParse',
+    'ngParse'
 
   ])
 

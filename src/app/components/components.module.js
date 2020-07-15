@@ -4,5 +4,6 @@ angular
     'home',
     'about',
     'dorms',
-    'events'
+    'events',
+    'auth'
   ]);

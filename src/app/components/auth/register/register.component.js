@@ -10,6 +10,7 @@ angular
     $stateProvider
       .state('register', {
         url: '/register',
-        component: 'register'
+        component: 'register',
+        parent: 'auth'
       });
   });

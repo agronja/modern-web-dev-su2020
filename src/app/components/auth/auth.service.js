@@ -1,5 +1,5 @@
-class authService {
-
+function authService(Parse) {
+/*
   constructor(Parse){
     this.Parse = Parse
     this.collection = []
@@ -12,8 +12,8 @@ class authService {
       'Dorm'
     ]
   }
-
-  var user = Parse.User();
+*/
+  var user = new Parse.User();
 
 /* Can this be changed to signUp with the setEmail, setPassword, etc.?
   New(obj) {
@@ -26,12 +26,12 @@ class authService {
       return obj
     }
   }
-*/
-  onSignIn(user) {
-    user = await Parse.User.logIn("myname", "mypass");
-    return user
-  }
 
+  this.onSignIn = function (user) {
+    return user
+      .logIn("myname", "mypass");
+  };
+*/
   this.login = function (user) {
     return user
       .logIn(user.email, user.password)
@@ -39,7 +39,7 @@ class authService {
 
   this.register = function (user) {
     return user
-      .signUp(user.email, user.password, user.username, user.dorm)
+      .signUp(user.email, user.password, user.username, user.Dorm)
   };
   this.logout = function () {
     return user
@@ -54,11 +54,12 @@ class authService {
     return user.authenticated();
   };
   this.getUser = function () {
-    return user.current();
+    console.log(Parse.User.current())
+    return Parse.User.current();
   };
 
 }
 
 angular
-  .module('common')
+  .module('auth')
   .service('authService', authService)

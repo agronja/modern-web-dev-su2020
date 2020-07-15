@@ -15,7 +15,8 @@ angular
       })
       .state('login', {
         url: '/login',
-        component: 'login'
+        component: 'login',
+        parent: 'auth'
       });
     $urlRouterProvider.otherwise('/auth/login');
   });
