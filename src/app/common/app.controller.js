@@ -1,5 +1,5 @@
 angular
   .module('common')
-  .controller('AppController', ['AuthService', function (AuthService){
+  .controller('AppController', ['authService', function (authService){
     const ctrl = this;
   }])

@@ -1,4 +1,4 @@
-class AuthService {
+class authService {
 
   constructor(Parse){
     this.Parse = Parse
@@ -71,4 +71,4 @@ class AuthService {
 
 angular
   .module('common')
-  .service('AuthService', AuthService)
+  .service('authService', authService)
