@@ -4,6 +4,13 @@ class AuthService {
     this.Parse = Parse
     this.collection = []
     this.authData = {}
+    this.name = 'User'
+    this.fields = [
+      'username',
+      'email',
+      'password',
+      'Dorm'
+    ]
   }
 
 /* Can this be changed to signUp with the setEmail, setPassword, etc.? */
@@ -18,18 +25,18 @@ class AuthService {
     }
   }
 
-  function onSignIn(user) {
+  onSignIn(user) {
     user = await Parse.User.logIn("myname", "mypass");
     return user
   }
 
 /* Do we need these two functions? Seems unnecessary with user.current() */
-  function storeAuthData(response) {
+  storeAuthData(response) {
     authData = response;
     return authData;
   }
 
-  function clearAuthData() {
+  clearAuthData() {
     authData = null;
   }
 

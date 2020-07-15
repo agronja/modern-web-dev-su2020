@@ -10,6 +10,5 @@ angular
       ctrl.newEvent.set('Body', ctrl.body)
       ctrl.newEvent.set('Dorm', ctrl.dorm)
       ctrl.newEvent.save()
-      console.log('Successfully saved ' + ctrl.newEvent.id)
     }
   }])
