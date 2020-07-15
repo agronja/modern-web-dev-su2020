@@ -1,7 +1,8 @@
 angular
   .module('common', [
     'ui.router',
-    'ngParse'
+    'ngParse',
+    'auth'
   ])
     //connecting our website to the server in Back4App
     .config(function($locationProvider, ParseProvider) {

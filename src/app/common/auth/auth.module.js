@@ -1,16 +1,17 @@
 angular
   .module('common', [
     'ui.router',
-    'ngParse'
+    'ngParse',
+
   ])
 
-  .run(function ($transitions, $state, AuthService) {
+  .run(function ($transitions, $state, authService) {
     $transitions.onStart({
       to: function (state) {
         return !!(state.data && state.data.requiredAuth);
       }
     }, function() {
-      return AuthService
+      return authService
         .requireAuthentication()
         .catch(function () {
           return $state.target('login');
@@ -19,7 +20,7 @@ angular
     $transitions.onStart({
       to: 'auth.*'
     }, function () {
-      if (AuthService.isAuthenticated()) {
+      if (authService.isAuthenticated()) {
         return $state.target('app');
       }
     });
