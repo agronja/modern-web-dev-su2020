@@ -1,4 +1,4 @@
-function AuthFormController() {
+function AuthFormController(eventsService) {
   var ctrl = this;
   ctrl.$onChanges = function (changes) {
     if (changes.user) {
@@ -12,6 +12,7 @@ function AuthFormController() {
       }
     });
   };
+
 }
 
 angular

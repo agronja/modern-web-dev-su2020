@@ -7,8 +7,8 @@
       placeholder="Enter your email"
       ng-model="$ctrl.user.email">
   </label>
-  <br>
-  <br>
+  <br />
+  <br />
   <label>
     <input
       name="username"
@@ -16,8 +16,8 @@
       placeholder="Enter your username"
       ng-model="$ctrl.user.username">
   </label>
-  <br>
-  <br>
+  <br />
+  <br />
   <label>
     <input
       type="password"
@@ -26,6 +26,17 @@
       placeholder="Enter your password"
       ng-model="$ctrl.user.password">
   </label>
+  <br />
+  <br />
+  <label>
+    <select name="dorm" ng-model="$ctrl.user.dorm" required="required">
+      <option value="">--Please select a dorm--</option>
+      <option ng-repeat="element in $ctrl.dorms" value="{{element.objectId}}">{{element.Name}}</option>
+
+    </select>
+  </label>
+  <br />
+  <br />
   <div class="auth-button">
     <button type="submit" ng-disabled="authForm.$invalid">
       {{ $ctrl.button }}

@@ -11,4 +11,15 @@ var authForm = {
 
 angular
   .module('auth')
-  .component('authForm', authForm);
+  .component('authForm', authForm)
+  .config(function($stateProvider) {
+    $stateProvider
+      .state('authForm', {
+        component: 'authForm',
+        resolve: {
+          dorms: function(dormsService) {
+            return dormsService.getAll()
+          }
+        }
+      })
+  });

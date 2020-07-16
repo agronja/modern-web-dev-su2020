@@ -1,9 +1,7 @@
 function DormsController($state) {
     const ctrl = this;
-/*
-    ctrl.getAll = $state.getAll;
-    console.log(ctrl.getAll);
-*/
+
+/* We don't use this
     ctrl.$onInit = function(){
 
       ctrl.searchDorms = function() {
@@ -11,12 +9,13 @@ function DormsController($state) {
 
         for(var i = 0; i < ctrl.dorms.length; i++){
           if(ctrl.dorms[i].get('Name') == ctrl.name){
-            ctrl.list.push(ctrl.textbooks[i])
+            ctrl.list.push(ctrl.dorms[i])
           }
         }
       }
 
     }
+    */
 }
 
 angular
