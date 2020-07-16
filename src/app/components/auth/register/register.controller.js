@@ -1,6 +1,5 @@
 function RegisterController(authService, $state) {
   var ctrl = this;
-  ctrl.register = "true";
   ctrl.$onInit = function () {
     ctrl.error = null;
     ctrl.user = {
@@ -8,12 +7,7 @@ function RegisterController(authService, $state) {
       password: '',
       username: ''
     };
-    console.log(ctrl.dorms);
   };
-
-  ctrl.$onChanges = function() {
-    console.log(ctrl.dorms);
-  }
 
   ctrl.createUser = function (event) {
 

@@ -1,7 +1,7 @@
 var register = {
   templateUrl: './register.html',
   controller: 'RegisterController',
-  binding: {
+  bindings: {
     dorms: '<'
   }
 };
@@ -17,13 +17,7 @@ angular
         parent: 'auth',
         resolve: {
           dorms: function(dormsService) {
-            var arr = dormsService.getAll()
-              .then(
-                function(arr) {
-                  console.log(arr)
-                }
-              )
-            return arr
+            return dormsService.getAll()
           }
         }
       });

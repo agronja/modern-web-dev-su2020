@@ -4,7 +4,6 @@ function AuthFormController(eventsService) {
     if (changes.user) {
       ctrl.user = angular.copy(ctrl.user);
     }
-    console.log(ctrl.dorms);
   };
   ctrl.submitForm = function () {
     ctrl.onSubmit({

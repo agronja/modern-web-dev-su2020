@@ -1,6 +1,5 @@
 function LoginController(authService, $state) {
   var ctrl = this;
-  ctrl.register = "";
   ctrl.$onInit = function () {
     ctrl.error = null;
     ctrl.user = {
