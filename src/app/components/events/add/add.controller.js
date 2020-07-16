@@ -1,10 +1,12 @@
 angular
   .module('add')
-  .controller('AddController', ['eventsService', function (eventsService){
+  .controller('AddController', ['eventsService', 'authService', function (eventsService, authService){
     const ctrl = this;
 
+    var user = authService.getUser();
+
     ctrl.addEvent = function() {
-      ctrl.newEvent.set('Author', ctrl.author)
+      ctrl.newEvent.set('Author', user.username)
       ctrl.newEvent.set('Date', ctrl.date)
       ctrl.newEvent.set('Title', ctrl.title)
       ctrl.newEvent.set('Body', ctrl.body)

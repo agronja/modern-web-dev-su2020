@@ -17,18 +17,28 @@ function authService(Parse) {
       .set("email", user.email)
       .signUp()
       .then(function() {
-        console.log(user.username + " successfully registered! ")
+        console.log(user.username + " successfully registered")
       })
   };
 
   this.logout = function() {
     return Parse.User
       .logOut()
+      .then(function() {
+        console.log("User logged out");
+      })
   };
 
   this.getUser = function() {
     return Parse.User
       .current();
+  }
+
+  this.requireAuthentication = function() {
+    if (Parse.User.current() != null) {
+      return true;
+    }
+    return false;
   }
 
   /* keep integrity of promise
