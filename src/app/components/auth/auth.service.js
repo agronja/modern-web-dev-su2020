@@ -10,17 +10,14 @@ function authService(Parse) {
   };
 
   this.register = function(user) {
-    var auth = new Parse.User()
 
-    auth.set("username", user.username);
-    auth.set("password", user.password);
-    auth.set("email", user.email);
-
-    return auth
+    return new Parse.User()
+      .set("username", user.username)
+      .set("password", user.password)
+      .set("email", user.email)
       .signUp()
       .then(function() {
-        console.log(user);
-        console.log("successfully registered!");
+        console.log(user.username + " successfully registered! ")
       })
   };
 
