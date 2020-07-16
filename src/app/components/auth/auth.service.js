@@ -1,11 +1,14 @@
 function authService(Parse) {
 
-/* We need to make this work first
+
   this.logIn = function(user) {
-    return Parse.User()
+    return Parse.User
       .logIn(user.email, user.password)
+      .then(function(user) {
+        console.log('User logged in: ' + user.email + ' Password ' + user.password);
+      })
   };
-*/
+
   this.register = function(user) {
     var auth = new Parse.User()
 
@@ -15,7 +18,7 @@ function authService(Parse) {
 
     return auth
       .signUp()
-      .then(function(){
+      .then(function() {
         console.log(user);
         console.log("successfully registered!");
       })

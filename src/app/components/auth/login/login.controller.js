@@ -10,7 +10,6 @@ function LoginController(authService, $state) {
   };
 
   ctrl.loginUser = function (event) {
-    console.log(event)
     return authService
       .logIn(event.user)
       .then(function () {

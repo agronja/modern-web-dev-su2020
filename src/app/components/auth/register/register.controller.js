@@ -10,8 +10,7 @@ function RegisterController(authService, $state) {
   };
 
   ctrl.createUser = function (event) {
-    console.log(event.user)
-
+    
     return authService
       .register(event.user)
       .then(function () {
