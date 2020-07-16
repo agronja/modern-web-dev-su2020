@@ -26,6 +26,11 @@ function authService(Parse) {
       .logOut()
   };
 
+  this.getUser = function() {
+    return Parse.User
+      .current();
+  }
+
   /* keep integrity of promise
   this.requireAuthentication = function () {
     return user
