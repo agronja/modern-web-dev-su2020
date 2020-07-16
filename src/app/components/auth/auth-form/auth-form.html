@@ -1,4 +1,4 @@
-<form name="authForm" novalidate ng-submit="$ctrl.submitForm();">
+<form name="authForm" novalidate ng-submit="$ctrl.submitForm();" ng-if="$ctrl.dorms.length">
   <label>
     <input
       type="email"
@@ -28,11 +28,11 @@
   </label>
   <br />
   <br />
-  <label>
+  <label ng-if="$ctrl.routeName !== 'login'">
     <select name="dorm" ng-model="$ctrl.user.dorm" required="required">
 
       <option value="">--Please select a dorm--</option>
-      <option ng-repeat="item in $ctrl.dorms">{{ item.get('Name') }}</option>
+      <option ng-repeat="item in $ctrl.dorms" value='{{item.get("objectId")}}'>{{ item.get('Name') }}</option>
 
     </select>
   </label>

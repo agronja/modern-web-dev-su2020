@@ -21,7 +21,7 @@ function authService(Parse) {
       })
   };
 
-  this.logout = function() {
+  this.logOut = function() {
     return Parse.User
       .logOut()
       .then(function() {
@@ -34,11 +34,12 @@ function authService(Parse) {
       .current();
   }
 
+  this.isAuthenticated = function() {
+    return Parse.User.authenticated();
+  }
+
   this.requireAuthentication = function() {
-    if (Parse.User.current() != null) {
-      return true;
-    }
-    return false;
+    return Parse.User.current();
   }
 
   /* keep integrity of promise
@@ -48,15 +49,6 @@ function authService(Parse) {
   };
   this.isAuthenticated = function() {
     return Parse.User().authenticated();
-  };
-  this.getUser = function() {
-    var currentUser = Parse.User().current();
-    if (currentUser) {
-      return currentUser
-    } else {
-      return Parse.User()
-        .signUp(user.email, user.password, user.username)
-    }
   };
 */
 }
