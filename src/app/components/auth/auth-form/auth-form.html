@@ -28,14 +28,15 @@
   </label>
   <br />
   <br />
-<!--  <label>
+  <label>
     <select name="dorm" ng-model="$ctrl.user.dorm" required="required">
-      <option value="">--Please select a dorm--</option>
-      <option ng-repeat="element in $ctrl.dorms" value="{{element.objectId}}">{{element.Name}}</option>
 
+      <option value="">--Please select a dorm--</option>
+      <option ng-repeat="item in $ctrl.dorms" value="{{item.get('objectId')}}">{{item.get('Name')}}</option>
+      
     </select>
   </label>
-  <br /> -->
+  <br />
   <br />
   <div class="auth-button">
     <button type="submit" ng-disabled="authForm.$invalid">

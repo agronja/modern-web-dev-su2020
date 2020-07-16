@@ -20,10 +20,10 @@ angular
                     return eventsService.New()
                   }
                 },
-
+/*
                 data: {
                   requiredAuth: true
                 }
-                
+                */
         })
 });
