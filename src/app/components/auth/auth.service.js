@@ -1,68 +1,49 @@
 function authService(Parse) {
-  /*
-    constructor(Parse){
-      this.Parse = Parse
-      this.collection = []
-      this.authData = {}
-      this.name = 'User'
-      this.fields = [
-        'username',
-        'email',
-        'password',
-        'Dorm'
-      ]
-    }
-  */
-  var user = new Parse.User();
 
-  /* Can this be changed to signUp with the setEmail, setPassword, etc.?
-    New(obj) {
-      if(angular.isUndefined(obj)){
-        const parseObject = new this.Parse.Object(this.name)
-        this.Parse.defineAttributes(parseObject, this.fields)
-        return parseObject
-      } else {
-        this.Parse.defineAttributes(obj, this.fields)
-        return obj
-      }
-    }
-
-    this.onSignIn = function (user) {
-      return user
-        .logIn("myname", "mypass");
-    };
-  */
-  this.login = function(user) {
-    return user
+/* We need to make this work first
+  this.logIn = function(user) {
+    return Parse.User()
       .logIn(user.email, user.password)
   };
-
+*/
   this.register = function(user) {
-    return user
-      .signUp(user.email, user.password, user.username, user.Dorm)
+    var auth = new Parse.User()
+
+    auth.set("username", user.username);
+    auth.set("password", user.password);
+    auth.set("email", user.email);
+
+    return auth
+      .signUp()
+      .then(function(){
+        console.log(user);
+        console.log("successfully registered!");
+      })
   };
+
   this.logout = function() {
-    return user
+    return Parse.User
       .logOut()
   };
+
   /* keep integrity of promise
   this.requireAuthentication = function () {
     return user
       .$waitForSignIn().then(onSignIn);
-  }; */
+  };
   this.isAuthenticated = function() {
-    return user.authenticated();
+    return Parse.User().authenticated();
   };
   this.getUser = function() {
-    var currentUser = user.current();
+    var currentUser = Parse.User().current();
     if (currentUser) {
       return currentUser
     } else {
-      return user
-        .signUp(user.email, user.password, user.username, user.dorm)
+      return Parse.User()
+        .signUp(user.email, user.password, user.username)
     }
   };
-
+*/
 }
 
 angular

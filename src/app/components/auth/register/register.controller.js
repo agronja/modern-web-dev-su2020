@@ -4,10 +4,14 @@ function RegisterController(authService, $state) {
     ctrl.error = null;
     ctrl.user = {
       email: '',
-      password: ''
+      password: '',
+      username: ''
     };
   };
+
   ctrl.createUser = function (event) {
+    console.log(event.user)
+
     return authService
       .register(event.user)
       .then(function () {
@@ -16,6 +20,7 @@ function RegisterController(authService, $state) {
         ctrl.error = reason.message;
       });
   };
+
 }
 
 angular

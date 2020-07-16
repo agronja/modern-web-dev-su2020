@@ -4,12 +4,15 @@ function LoginController(authService, $state) {
     ctrl.error = null;
     ctrl.user = {
       email: '',
-      password: ''
+      password: '',
+      username: ''
     };
   };
+
   ctrl.loginUser = function (event) {
+    console.log(event)
     return authService
-      .login(event.user)
+      .logIn(event.user)
       .then(function () {
         $state.go('app');
       }, function (reason) {

@@ -1,11 +1,15 @@
 function AppController(authService, $state) {
-  var ctrl = this;
-  ctrl.user = authService.getUser();
+  const ctrl = this;
+
+  //ctrl.user = authService.getUser();
   ctrl.logout = function () {
     authService.logout().then(function () {
       $state.go('auth.login');
     });
   };
+
+  console.log(ctrl);
+
 }
 
 angular
