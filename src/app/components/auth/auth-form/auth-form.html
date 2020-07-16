@@ -1,5 +1,5 @@
-<form name="authForm" novalidate ng-submit="$ctrl.submitForm();" ng-if="$ctrl.dorms.length">
-  <label>
+<form name="authForm" novalidate ng-submit="$ctrl.submitForm();">
+  <label ng-if="$ctrl.routeName !== 'login'">
     <input
       type="email"
       name="email"
@@ -7,8 +7,8 @@
       placeholder="Enter your email"
       ng-model="$ctrl.user.email">
   </label>
-  <br />
-  <br />
+  <br ng-if="$ctrl.routeName !== 'login'" />
+  <br ng-if="$ctrl.routeName !== 'login'" />
   <label>
     <input
       name="username"
@@ -36,8 +36,8 @@
 
     </select>
   </label>
-  <br />
-  <br />
+  <br ng-if="$ctrl.routeName !== 'login'"/>
+  <br ng-if="$ctrl.routeName !== 'login'"/>
   <div class="auth-button">
     <button type="submit" ng-disabled="authForm.$invalid">
       {{ $ctrl.button }}
