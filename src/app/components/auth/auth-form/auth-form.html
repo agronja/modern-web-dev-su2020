@@ -32,8 +32,8 @@
     <select name="dorm" ng-model="$ctrl.user.dorm" required="required">
 
       <option value="">--Please select a dorm--</option>
-      <option ng-repeat="item in $ctrl.dorms" value="{{item.get('objectId')}}">{{item.get('Name')}}</option>
-      
+      <option ng-repeat="item in $ctrl.dorms">{{ item.get('Name') }}</option>
+
     </select>
   </label>
   <br />
