@@ -5,7 +5,7 @@
     <!--repeating through each event and printing outs its attributes-->
     <li ng-repeat="item in $ctrl.events">
       Event: {{ item.get('Title') }} <br />
-      Date: {{ item.get('Date') }} <br />
+      Date: {{ item.get('Date')  | date:'longDate' }} <br />
       Submitted by: {{ item.get('Author') }} <br />
       Dorm: {{ item.get('Dorm') }} <br />
       Body: {{ item.get('Body') }} <br />
