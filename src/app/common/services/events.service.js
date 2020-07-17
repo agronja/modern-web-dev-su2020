@@ -33,9 +33,6 @@ class eventsService {
           this.Parse.defineAttributes(result, this.fields)
         })
         this.data = results
-        for(var item in this.data){
-          console.log(item);
-        }
         return Promise.resolve(results)
       })
       .catch(error => Promise.reject(error))

@@ -19,11 +19,9 @@ angular
                   newEvent: function(eventsService) {
                     return eventsService.New()
                   }
-                }
-                /*
+                } /*
                 data: {
                   requiredAuth: true
-                }
-                */
+                } */
         })
 });

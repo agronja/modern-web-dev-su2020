@@ -31,7 +31,7 @@
   <label ng-if="$ctrl.routeName !== 'login'">
     <select name="dorm" ng-model="$ctrl.user.dorm">
 
-      <option disabled selected value="">--Please select a dorm--</option>
+      <option disabled selected value="">-- Please select a dorm --</option>
       <option ng-repeat="item in $ctrl.dorms" value='{{item.id}}'>{{ item.Name }}</option>
 
     </select>

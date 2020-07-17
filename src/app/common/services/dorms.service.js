@@ -42,7 +42,7 @@ class dormsService {
     return new this.Parse.Query(this.New())
       .get(id)
       .then(result => {
-        this.Parse.defineAttributes(result, tihs.fields);
+        this.Parse.defineAttributes(result, this.fields);
         this.data = result;
         return Promise.resolve(result);
       })

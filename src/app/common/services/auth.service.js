@@ -40,15 +40,15 @@ function authService(Parse) {
   }
 
   this.isAuthenticated = function() {
-    return Parse.User.authenticated();
+    return Parse.User.current();
   }
 
   this.requireAuthentication = function() {
-    var currentUser = Parse.User.current();
+    return Promise
+      .resolve(Parse.User().authenticated())
+      .then(function() {
 
-    if(currentUser){
-
-    }
+      })
   }
 
   /* keep integrity of promise

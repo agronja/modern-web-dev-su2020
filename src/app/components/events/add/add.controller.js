@@ -1,6 +1,6 @@
 angular
   .module('add')
-  .controller('AddController', ['eventsService', 'authService', function (eventsService, authService){
+  .controller('AddController', ['eventsService', 'authService', 'dormsService', function (eventsService, authService, dormsService){
     const ctrl = this;
 
     var user = authService.getUser();
