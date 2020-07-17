@@ -3,10 +3,15 @@ function AppController(authService, $state) {
 
   ctrl.user = authService.getUser();
 
-  //needs to be changed
   ctrl.logout = function () {
-    authService.logout();
+    authService.logOut()
+    .then(function () {
+      $state.go('app');
+    }, function (reason) {
+      ctrl.error = reason.message;
+    });
   };
+
 
   console.log(ctrl.user);
 
