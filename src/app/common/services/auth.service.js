@@ -11,10 +11,15 @@ function authService(Parse) {
 
   this.register = function(user) {
 
+    console.log(user);
+    const userDorm = Parse.Object.extend('Dorms');
+    const dormPtr = new userDorm().set('objectId', user.dorm);
+
     return new Parse.User()
       .set("username", user.username)
       .set("password", user.password)
       .set("email", user.email)
+      .set("Dorm", dormPtr)
       .signUp()
       .then(function() {
         console.log(user.username + " successfully registered")
@@ -39,7 +44,11 @@ function authService(Parse) {
   }
 
   this.requireAuthentication = function() {
-    return Parse.User.current();
+    var currentUser = Parse.User.current();
+
+    if(currentUser){
+
+    }
   }
 
   /* keep integrity of promise
@@ -54,5 +63,5 @@ function authService(Parse) {
 }
 
 angular
-  .module('auth')
+  .module('common')
   .service('authService', authService)

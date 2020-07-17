@@ -5,4 +5,8 @@
     <div class="app">
         <div ui-view></div>
     </div>
+
+    <form ng-submit="$ctrl.logOut()">
+      <button value="logout" name="logout" user="$ctrl.user" class="kill">Log Out</button>
+    </form>
 </div>

@@ -10,7 +10,8 @@ class dormsService {
       'Name',
       'Year',
       'Capacity',
-      'Mascot'
+      'Mascot',
+      'objectId'
     ]
   }
 

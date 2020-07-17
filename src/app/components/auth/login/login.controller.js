@@ -5,7 +5,8 @@ function LoginController(authService, $state) {
     ctrl.user = {
       email: '',
       password: '',
-      username: ''
+      username: '',
+      dorm: ''
     };
   };
 
