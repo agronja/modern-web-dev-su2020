@@ -11,7 +11,6 @@ function authService(Parse) {
 
   this.register = function(user) {
 
-    console.log(user);
     const userDorm = Parse.Object.extend('Dorms');
     const dormPtr = new userDorm().set('objectId', user.dorm);
 
@@ -19,10 +18,11 @@ function authService(Parse) {
       .set("username", user.username)
       .set("password", user.password)
       .set("email", user.email)
-      .set("Dorm", dormPtr)
+      .set("dorm", dormPtr)
       .signUp()
       .then(function() {
         console.log(user.username + " successfully registered")
+        console.log(user.dorm)
       })
   };
 
