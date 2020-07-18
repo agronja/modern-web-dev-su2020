@@ -1,6 +1,6 @@
 angular
   .module('add')
-  .controller('AddController', ['eventsService', 'authService', 'dormsService', function (eventsService, authService, dormsService){
+  .controller('AddController', ['eventsService', 'authService', 'dormsService', '$state', function (eventsService, authService, dormsService, $state){
     const ctrl = this;
 
     var user = authService.getUser();
@@ -19,5 +19,11 @@ angular
       ctrl.newEvent.save()
 
       ctrl.eventExists = "true"
+
+      setTimeout(ctrl.gotoview, 2500)
+    }
+
+    ctrl.gotoview = function() {
+      $state.go('view');
     }
   }])
