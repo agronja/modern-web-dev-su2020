@@ -30,6 +30,7 @@ function authService(Parse) {
     return Parse.User
       .logOut()
       .then(function() {
+        var currentUser = Parse.User.getUser();
         console.log("User logged out");
       })
   };
