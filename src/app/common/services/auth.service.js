@@ -12,7 +12,7 @@ function authService(Parse) {
     return Parse.User
       .logIn(user.email, user.password)
       .then(function(user) {
-        console.log('User logged in: ' + user.email + ' Password ' + user.password);
+        console.log(user.username + ' logged in: ');
       })
   };
 
@@ -34,10 +34,11 @@ function authService(Parse) {
   };
 
   this.logOut = function() {
+    var name = Parse.User.current().username
     return Parse.User
       .logOut()
       .then(function() {
-        console.log("User logged out");
+        console.log(name + " logged out");
       })
   };
 
@@ -47,15 +48,11 @@ function authService(Parse) {
   }
 
   this.isAuthenticated = function() {
-    return Parse.User.current();
+    return Parse.User.authenticated();
   }
 
   this.requireAuthentication = function() {
-    return Promise
-      .resolve(Parse.User().authenticated())
-      .then(function() {
 
-      })
   }
 
   this.getAttributes = function() {

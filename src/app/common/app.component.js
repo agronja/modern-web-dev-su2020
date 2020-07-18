@@ -10,7 +10,7 @@ angular
     .config(function($stateProvider) {
         $stateProvider
             .state('app', {
-              //  redirectTo: 'home',
+                redirectTo: 'home',
                 url: '/',
                 component: 'app'
         })

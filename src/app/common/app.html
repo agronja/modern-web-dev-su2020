@@ -1,12 +1,14 @@
 <!--within root and app, loading the ui-view-->
 <div class="root">
-    <!--<app-nav user="$ctrl.user" on-logout="$ctrl.logout();"></app-nav>
-    <app-sidebar></app-sidebar>-->
     <div class="app">
         <div ui-view></div>
     </div>
 
-    <form ng-submit="$ctrl.logOut()">
-      <button value="logout" name="logout" user="$ctrl.user" class="kill">Log Out</button>
+    <form ng-submit="$ctrl.logout()" ng-if="$ctrl.user">
+      <button value="logout" name="logout" class="kill">Log Out</button>
+    </form>
+
+    <form ng-submit="$ctrl.login()" ng-if="!($ctrl.user)">
+      <button value="login" name="login" class="kill">Log In</button>
     </form>
 </div>

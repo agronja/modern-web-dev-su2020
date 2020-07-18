@@ -6,11 +6,15 @@ function AppController(authService, $state) {
   ctrl.logout = function () {
     authService.logOut()
     .then(function () {
-      $state.go('app');
+      $state.go('auth');
     }, function (reason) {
       ctrl.error = reason.message;
     });
   };
+
+  ctrl.login = function(){
+    $state.go('auth');
+  }
 
   console.log(ctrl.user);
 
