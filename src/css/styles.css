@@ -80,3 +80,11 @@ tr, td {
 .events li a.active {
   border-bottom-color: red;
 }
+
+.nEvent {
+  color: darkGreen;
+}
+
+.error {
+  color: red;
+}

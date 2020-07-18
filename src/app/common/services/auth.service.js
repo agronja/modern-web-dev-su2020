@@ -12,7 +12,7 @@ function authService(Parse) {
     return Parse.User
       .logIn(user.email, user.password)
       .then(function(user) {
-        console.log(user.username + ' logged in: ');
+        console.log(user.username + ' logged in');
       })
   };
 

@@ -12,10 +12,12 @@ angular
       ctrl.newEvent.set('Title', ctrl.title)
       ctrl.newEvent.set('Body', ctrl.body)
       ctrl.newEvent.set('Dorm', user.attributes.dorm.attributes.Name)
-      /* 
+      /*
       ctrl.newEvent.Parse.defineAttributes(user.dorm, ctrl.fields('dorm'))
       ctrl.newEvent.Parse.defineAttributes(user.name, ctrl.fields('Name'))
       */
       ctrl.newEvent.save()
+
+      ctrl.eventExists = "true"
     }
   }])

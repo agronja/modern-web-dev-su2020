@@ -13,13 +13,17 @@
         </li>
         <br>
         <li>Short Description of the Event:
-          <input ng-model="$ctrl.body" type="text" id="body">
+          <br>
+          <textarea ng-model="$ctrl.body" type="text" id="body" rows="4" cols="30"></textarea>
         </li>
         <br>
-        <li>
-          <input type="submit" value="Submit" >
-        </li>
       </ul>
+      <input type="submit" value="Submit" >
+      <br>
+      <br>
+      <div ng-if="$ctrl.eventExists" class="nEvent">
+        <b>Event successfully added!</b>
+      </div>
     </fieldset>
 
   </form>
