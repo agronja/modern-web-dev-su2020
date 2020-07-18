@@ -10,7 +10,9 @@ angular
       ctrl.newEvent.set('Date', ctrl.date)
       ctrl.newEvent.set('Title', ctrl.title)
       ctrl.newEvent.set('Body', ctrl.body)
-      ctrl.newEvent.set('Dorm', user.attributes.dorm.attributes.Name)
+      //user.attributes.dorm.attributes.Name)
+      ctrl.newEvent.Parse.defineAttributes(user.dorm, 'Dorm')
+      ctrl.newEvent.Parse.defineAttributes(user.name, 'Name')
       ctrl.newEvent.save()
     }
   }])
