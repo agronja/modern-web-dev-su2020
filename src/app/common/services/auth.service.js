@@ -55,6 +55,7 @@ function authService(Parse) {
     return Promise
       .resolve(Parse.User().authenticated())
       .then(function() {
+      //  const query = new Parse.Query(Parse.User);
 
       })
   }
