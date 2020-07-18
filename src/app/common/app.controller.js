@@ -12,6 +12,8 @@ function AppController(authService, $state) {
     });
   };
 
+  console.log(ctrl.user);
+
 }
 
 angular

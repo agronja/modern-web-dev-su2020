@@ -1,5 +1,12 @@
 function authService(Parse) {
 
+  this.fields = [
+    'email',
+    'password',
+    'username',
+    'dorm'
+  ]
+
 
   this.logIn = function(user) {
     return Parse.User
@@ -50,6 +57,10 @@ function authService(Parse) {
       .then(function() {
 
       })
+  }
+
+  this.getAttributes = function() {
+    /* Maybe have something here to get dorm attributes? */
   }
 
   /* keep integrity of promise
