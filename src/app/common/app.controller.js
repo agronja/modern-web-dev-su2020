@@ -16,7 +16,6 @@ function AppController(authService, $state) {
     $state.go('auth');
   }
 
-  console.log(ctrl.user);
 
 }
 
