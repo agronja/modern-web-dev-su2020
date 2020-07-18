@@ -4,15 +4,18 @@ angular
     const ctrl = this;
 
     var user = authService.getUser();
+    var attrib = authService.getAttributes();
 
     ctrl.addEvent = function() {
       ctrl.newEvent.set('Author', user.username)
       ctrl.newEvent.set('Date', ctrl.date)
       ctrl.newEvent.set('Title', ctrl.title)
       ctrl.newEvent.set('Body', ctrl.body)
-      //user.attributes.dorm.attributes.Name)
+      ctrl.newEvent.set('Dorm', user.attributes.dorm.attributes.Name)
+      /* This doesn't work
       ctrl.newEvent.Parse.defineAttributes(user.dorm, 'Dorm')
       ctrl.newEvent.Parse.defineAttributes(user.name, 'Name')
+      */
       ctrl.newEvent.save()
     }
   }])
