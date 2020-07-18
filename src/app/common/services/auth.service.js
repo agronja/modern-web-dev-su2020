@@ -29,7 +29,6 @@ function authService(Parse) {
       .signUp()
       .then(function() {
         console.log(user.username + " successfully registered")
-        console.log(user.dorm)
       })
   };
 
@@ -51,8 +50,10 @@ function authService(Parse) {
     return Parse.User.authenticated();
   }
 
-  this.requireAuthentication = function() {
-
+  this.requireAuthentication = function($state) {
+    if(!this.isAuthenticated()){
+      $state.go('auth')
+    }
   }
 
   this.getAttributes = function() {
