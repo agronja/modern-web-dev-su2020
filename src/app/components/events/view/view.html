@@ -1,9 +1,9 @@
 <!--template for the events which prints all the events stored on the server-->
 <div class="view">
   <h1>See All Events</h1>
-  <ul>
+  <ul class="lists">
     <!--repeating through each event and printing outs its attributes-->
-    <li ng-repeat="item in $ctrl.events">
+    <li ng-repeat="item in $ctrl.events" class="event">
       Event: {{ item.get('Title') }} <br />
       Date: {{ item.get('Date')  | date:'longDate' }} <br />
       Submitted by: {{ item.get('Author') }} <br />

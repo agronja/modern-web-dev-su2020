@@ -1,15 +1,21 @@
 <!--within root and app, loading the ui-view-->
 <div class="root">
-    <div class="app">
-        <div ui-view></div>
-    </div>
+  <!-- Actually showing the website -->
+  <div class="app">
+    <div ui-view></div>
+  </div>
 
-    <br><br>
+  <fieldset class="logs">
+    <!-- This is how the user will log in/out -->
     <form ng-submit="$ctrl.logout()" ng-if="$ctrl.user">
+      <b>Welcome, {{$ctrl.user.username}}!</b>
       <button value="logout" name="logout" class="kill">Log Out</button>
     </form>
 
     <form ng-submit="$ctrl.login()" ng-if="!($ctrl.user)">
+      <b>You are not currently logged in.</b>
       <button value="login" name="login" class="kill">Log In</button>
     </form>
+
+  </fieldset>
 </div>

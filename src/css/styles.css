@@ -2,30 +2,16 @@
 body {
    padding-top: 3vw;
    padding-left: 3vw;
+   /*
    background-repeat: no-repeat;
    background-size: cover;
+   */
    font-family: 'Raleway', sans-serif;
 }
 /*title syles*/
 h1 {
    text-decoration: underline;
    font-style:italic;
-   /* color: rgb(73, 124,339); */
-}
-/*table outline*/
-table {
-    border-collapse: collapse;
-    width: 50%;
-    background-color: lightsteelblue;
-    box-shadow: 10px 10px 10px lightgrey;
-}
-/*white table outline*/
-table, tr, td {
-    border: 2px solid black;
-}
-/*padding within the table*/
-tr, td {
-    padding: 15px;
 }
 
 .header {
@@ -87,4 +73,35 @@ tr, td {
 
 .error {
   color: red;
+}
+
+.dorms{
+  padding-bottom: 125px;
+}
+
+.event {
+
+}
+
+.logs {
+  position: fixed;
+  bottom: 80px;
+  background-color: lightgrey;
+  width: 90vw;
+  text-align: left;
+  margin: auto;
+}
+
+.view {
+  padding-bottom: 50px;
+}
+
+.kill {
+  margin: auto;
+  float: right;
+}
+
+.welmessage {
+  margin: auto;
+  text-align: left;
 }

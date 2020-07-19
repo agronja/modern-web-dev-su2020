@@ -1,7 +1,7 @@
 <div class="dorms">
     <h2>Dorms</h2>
-    <ul>
-      <li ng-repeat="item in $ctrl.dorms">
+    <ul class="lists">
+      <li ng-repeat="item in $ctrl.dorms" class="dorm">
         Dorm: {{ item.get('Name') }} <br />
         Year Established: {{ item.get('Year') }} <br />
         Max Capacity: {{ item.get('Capacity') }} <br />
