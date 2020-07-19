@@ -51,7 +51,8 @@ function authService(Parse) {
   }
 
   this.requireAuthentication = function($state) {
-    if(!this.isAuthenticated()){
+    var user = this.getUser();
+    if(!user){
       $state.go('auth')
     }
   }
