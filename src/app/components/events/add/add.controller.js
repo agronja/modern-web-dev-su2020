@@ -14,7 +14,7 @@ angular
       eventService.data.Title = user.title;
       eventService.data.Body = user.body;
 
-      eventService.data.Dorm = dormsService.getByUser(user;
+      eventService.data.Dorm = dormsService.getByUser(user);
 
       eventService.service.save()
         .then(function () {

@@ -52,11 +52,12 @@ class dormsService {
   getByUser(user){
     return new this.Parse.Query(this.New())
       .include('Name')
-      .equalTo('Name', user)
+      .equalTo('Name', user.dorm)
       .find()
       .then(Dorms => {
           Dorms.forEach(Dorms => {
             this.Parse.defineAttributes(Dorms, this.fields);
+            this.Parse.defineAttributes(Dorms.Name, this.fields)
           })
           this.collection = Dorms;
           console.log("getByUser", this.collection)
