@@ -55,7 +55,7 @@ function authService(Parse) {
     console.log(user);
 
     return new Promise(function(resolve,reject) {
-        if(user.authenticated()) {
+        if(!!user && user.authenticated()) {
           resolve();
         } else {
           reject();

@@ -48,6 +48,24 @@ class dormsService {
       })
       .catch(error => Promise.reject(error));
   }
+
+  getByUser(user){
+    return new this.Parse.Query(this.New())
+      .include('Name')
+      .equalTo('Name', user)
+      .find()
+      .then(Dorms => {
+          Dorms.forEach(Dorms => {
+            this.Parse.defineAttributes(Dorms, this.fields);
+          })
+          this.collection = Dorms;
+          console.log("getByUser", this.collection)
+          return Promise.resolve(Dorms)
+      })
+      .catch(error => Promise.reject(error));
+  }
+
+
 }
 
 angular
