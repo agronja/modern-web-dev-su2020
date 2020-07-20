@@ -9,14 +9,14 @@ angular
     ctrl.addEvent = function() {
       eventsService.data = eventsService.New();
 
-      eventService.data.Author = user.username;
-      eventService.data.Date = user.date;
-      eventService.data.Title = user.title;
-      eventService.data.Body = user.body;
+      eventsService.data.Author = user.username;
+      eventsService.data.Date = ctrl.date;
+      eventsService.data.Title = ctrl.title;
+      eventsService.data.Body = ctrl.body;
 
-      eventService.data.Dorm = dormsService.getByUser(user);
+      eventsService.data.Dorm = dormsService.getByUser(user);
 
-      eventService.service.save()
+      eventsService.service.save()
         .then(function () {
           ctrl.gotoview
         })
