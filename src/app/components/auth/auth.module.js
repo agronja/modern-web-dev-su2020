@@ -12,12 +12,10 @@ angular
       }
     }, function() {
       return authService
-        .requireAuthentication($state)
-        /*
+        .requireAuthentication()
         .catch(function () {
           return $state.target('login');
         });
-        */
     });
     $transitions.onStart({
       to: 'auth.*'

@@ -50,26 +50,25 @@ function authService(Parse) {
     return Parse.User.authenticated();
   }
 
-  this.requireAuthentication = function($state) {
+  this.requireAuthentication = function() {
     var user = this.getUser();
-    if(!user){
-      $state.go('auth')
-    }
+    console.log(user);
+
+    return new Promise(function(resolve,reject) {
+        if(user.authenticated()) {
+          resolve();
+        } else {
+          reject();
+        }
+
+    });
   }
 
   this.getAttributes = function() {
     /* Maybe have something here to get dorm attributes? */
   }
 
-  /* keep integrity of promise
-  this.requireAuthentication = function () {
-    return user
-      .$waitForSignIn().then(onSignIn);
-  };
-  this.isAuthenticated = function() {
-    return Parse.User().authenticated();
-  };
-*/
+
 }
 
 angular
