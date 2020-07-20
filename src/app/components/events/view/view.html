@@ -6,8 +6,8 @@
     <li ng-repeat="item in $ctrl.events" class="event">
       <h2>{{ item.get('Title') }} </h2>
       <h3>{{ item.get('Dorm') }} Hall, {{ item.get('Date')  | date:'longDate' }} </h3>
-      Submitted by: {{ item.get('Author') }} <br /> <br />
-      More Info: {{ item.get('Body') }} <br />
+      <p class="submission"> Submitted by: {{ item.get('Author') }} </p>
+      {{ item.get('Body') }} <br />
       <hr />
     </li>
   </ul>

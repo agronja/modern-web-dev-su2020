@@ -121,7 +121,8 @@ h2 {
 }
 
 .lists {
-  background-color: rgb(213, 229, 245);
+  /*background-color: rgb(213, 229, 245); */
+  list-style-type: string;
 }
 
 .event {
@@ -149,4 +150,8 @@ h2 {
 .welmessage {
   margin: auto;
   text-align: left;
+}
+
+.submission {
+  font-style: italic;
 }
