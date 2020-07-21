@@ -4,7 +4,8 @@ function authService(Parse) {
     'email',
     'password',
     'username',
-    'dorm'
+    'dorm',
+    'attributes'
   ]
 
 
@@ -52,7 +53,6 @@ function authService(Parse) {
 
   this.requireAuthentication = function() {
     var user = this.getUser();
-    console.log(user);
 
     return new Promise(function(resolve,reject) {
         if(!!user && user.authenticated()) {
@@ -62,10 +62,6 @@ function authService(Parse) {
         }
 
     });
-  }
-
-  this.getAttributes = function() {
-    /* Maybe have something here to get dorm attributes? */
   }
 
 

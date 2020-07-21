@@ -4,9 +4,9 @@ angular
     const ctrl = this;
 
     var user = authService.getUser();
-    var attrib = authService.getAttributes();
 
     ctrl.addEvent = function() {
+      /*
       eventsService.data = eventsService.New();
 
       eventsService.data.Author = user.username;
@@ -18,22 +18,24 @@ angular
 
       eventsService.service.save()
         .then(function () {
-          ctrl.gotoview
+          ctrl.gotoview();
+        })
+        */
+
+
+
+      ctrl.newEvent.set('Date', ctrl.date)
+        .set('Author', user.username)
+        .set('Title', ctrl.title)
+        .set('Body', ctrl.body)
+        .set('Dorm', user.attributes.dorm.attributes.Name)
+        .save()
+        .then(function() {
+          ctrl.eventExists = "true"
+          setTimeout(ctrl.gotoview, 1500);
         })
 
-    //  ctrl.newEvent.set('Author', user.username)
-    //  ctrl.newEvent.set('Date', ctrl.date)
-    //  ctrl.newEvent.set('Title', ctrl.title)
-    //  ctrl.newEvent.set('Body', ctrl.body)
-    //  ctrl.newEvent.set('Dorm', user.attributes.dorm.attributes.Name)
-      /*
-      ctrl.newEvent.Parse.defineAttributes(user.dorm, ctrl.fields('Name'))
-      */
-      ctrl.newEvent.save()
-
       ctrl.eventExists = "true"
-
-      setTimeout(ctrl.gotoview, 2500)
     }
 
     ctrl.gotoview = function() {
