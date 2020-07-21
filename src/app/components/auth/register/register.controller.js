@@ -1,3 +1,4 @@
+//controller for the register page
 function RegisterController(authService, $state) {
   var ctrl = this;
   ctrl.$onInit = function () {

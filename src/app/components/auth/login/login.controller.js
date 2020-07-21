@@ -1,3 +1,4 @@
+// controller for the login page
 function LoginController(authService, $state) {
   var ctrl = this;
   ctrl.$onInit = function () {

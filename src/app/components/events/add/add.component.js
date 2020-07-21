@@ -20,6 +20,7 @@ angular
                     return eventsService.New()
                   }
                 },
+                //authorization is required to add events
                 data: {
                   requiredAuth: true
                 }

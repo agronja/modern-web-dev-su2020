@@ -5,6 +5,7 @@ angular
 
   ])
 
+  //when ath.module is run, perform these operations and call authService
   .run(function ($transitions, $state, authService) {
     $transitions.onStart({
       to: function (state) {

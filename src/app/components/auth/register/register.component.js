@@ -1,3 +1,4 @@
+//component for the register page
 var register = {
   templateUrl: './register.html',
   controller: 'RegisterController',

@@ -1,3 +1,4 @@
+//component for the login page
 var login = {
   templateUrl: './login.html',
   controller: 'LoginController'

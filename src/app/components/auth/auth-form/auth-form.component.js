@@ -1,3 +1,4 @@
+// component for the form that user fills in
 var authForm = {
   bindings: {
     user: '<',

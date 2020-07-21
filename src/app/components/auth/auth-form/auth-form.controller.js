@@ -1,3 +1,4 @@
+// controller for the form that the user uses to register
 function AuthFormController(eventsService) {
   var ctrl = this;
   ctrl.$onChanges = function (changes) {
