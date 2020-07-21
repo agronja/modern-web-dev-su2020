@@ -6,7 +6,7 @@ angular
     var user = authService.getUser();
 
     ctrl.addEvent = function() {
-      /*
+      /* in another timeline, we're able to get this to work without the user.attributes.dorm.attributes.Name
       eventsService.data = eventsService.New();
 
       eventsService.data.Author = user.username;
@@ -21,9 +21,6 @@ angular
           ctrl.gotoview();
         })
         */
-
-
-
       ctrl.newEvent.set('Date', ctrl.date)
         .set('Author', user.username)
         .set('Title', ctrl.title)
@@ -34,8 +31,6 @@ angular
           ctrl.eventExists = "true"
           setTimeout(ctrl.gotoview, 1500);
         })
-
-      ctrl.eventExists = "true"
     }
 
     ctrl.gotoview = function() {
