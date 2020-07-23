@@ -161,3 +161,12 @@ h3 {
 ul {
   list-style-type: none;
 }
+
+.fabToolbardemoBasicUsage md-fab-toolbar.md-right md-fab-trigger.align-with-text {
+  left: 7px;
+  width: 90vw;
+}
+
+md-toolbar {
+  width: 90vw;
+}

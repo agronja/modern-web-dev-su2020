@@ -2,5 +2,8 @@ angular
   .module('root', [
     'common',
     'components',
-    'templates'
+    'templates',
+    'ngMaterial',
+    'ngMessages'
+    //'material.svgAssetsCache'
   ]);
