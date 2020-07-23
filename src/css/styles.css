@@ -170,3 +170,7 @@ ul {
 md-toolbar {
   width: 90vw;
 }
+
+.md-subhead {
+  font-style: italic;
+}

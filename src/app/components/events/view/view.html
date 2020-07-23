@@ -1,7 +1,8 @@
 <!--template for the events which prints all the events stored on the server-->
 <div class="view">
+  <!-- This is the old website
   <ul class="lists">
-    <!--repeating through each event and printing outs its attributes-->
+    <!--repeating through each event and printing outs its attributes
     <li ng-repeat="item in $ctrl.events" class="event">
       <h2>{{ item.get('Title') }} </h2>
       <h3>{{ item.get('Dorm') }} Hall, {{ item.get('Date')  | date:'longDate' }} </h3>
@@ -9,5 +10,23 @@
       {{ item.get('Body') }} <br />
       <hr />
     </li>
-  </ul>
+  </ul> -->
+
+  <!-- This is the new way, with cards -->
+  <md-content layout-xs="column" layout="row">
+    <div flex-xs="" layout="column">
+      <md-card ng-repeat="item in $ctrl.events">
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">{{ item.get('Title') }}</span>
+            <span class="md-subhead">Submitted by: {{item.get('Author')}}</span>
+          </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+          <p class="eventAbout"><b>{{ item.get('Dorm')}} Hall, {{ item.get('Date') | date:'longDate' }} </b></p>
+          <p> {{ item.get('Body') }}</p>
+      </md-card>
+    </div>
+  </md-content>
+
 </div>
