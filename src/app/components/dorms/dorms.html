@@ -1,4 +1,5 @@
 <div class="dorms">
+  <!-- The old way
     <ul class="lists">
       <li ng-repeat="item in $ctrl.dorms" class="dorm">
         <h3> {{ item.get('Name') }} Hall </h3>
@@ -11,4 +12,23 @@
         <hr />
       </li>
     </ul>
+    -->
+    <h1> All Notre Dame Dorms </h1>
+
+    <!-- The new way -->
+    <md-content layout-xs="column" layout="row">
+      <div flex-xs="" flex-gt-xs="100" layout="column">
+        <md-card ng-repeat="item in $ctrl.dorms">
+          <md-card-title>
+            <md-card-title-text>
+              <span class="md-headline">{{ item.get('Name') }} Hall</span>
+            </md-card-title-text>
+          </md-card-title>
+          <md-card-content>
+            <p>Year Established: {{item.get('Year')}}</p>
+            <p>Max Capacity: {{item.get('Capacity') }}</p>
+            <p>Mascot: {{item.get('Mascot')}}</p>
+        </md-card>
+      </div>
+    </md-content>
 </div>
