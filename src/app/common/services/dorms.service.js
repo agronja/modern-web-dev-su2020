@@ -11,7 +11,8 @@ class dormsService {
       'Year',
       'Capacity',
       'Mascot',
-      'objectId'
+      'objectId',
+      'Crest'
     ]
   }
 

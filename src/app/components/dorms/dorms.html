@@ -23,6 +23,9 @@
             <md-card-title-text>
               <span class="md-headline">{{ item.get('Name') }} Hall</span>
             </md-card-title-text>
+            <md-card-title-media>
+              <img src="{{item.get('Crest')}}" alt="Crest of {{item.get('Name')}} Hall"/>
+            </md-card-title-media>
           </md-card-title>
           <md-card-content>
             <p>Year Established: {{item.get('Year')}}</p>
