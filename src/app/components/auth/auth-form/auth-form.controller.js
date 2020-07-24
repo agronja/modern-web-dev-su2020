@@ -7,12 +7,14 @@ function AuthFormController(eventsService) {
     }
   };
   ctrl.submitForm = function () {
+
     ctrl.onSubmit({
       $event: {
         user: ctrl.user
       }
     });
   };
+
 
 
 }

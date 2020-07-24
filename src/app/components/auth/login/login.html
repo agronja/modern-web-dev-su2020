@@ -1,17 +1,24 @@
-<fieldset>
-  <div class="auth">
-    <h1>Login</h1>
-    <auth-form
-    user="$ctrl.user"
-    message="{{ $ctrl.error }}"
-    button="Log In"
-    on-submit="$ctrl.loginUser($event);"
-    route-name="login">
-    </auth-form>
-  </div>
-  <br>
+<div class="auth">
+  <!-- Old way
+  <h1>Login</h1>
+  <auth-form user="$ctrl.user"
+      message="{{ $ctrl.error }}"
+      button="Log In"
+      on-submit="$ctrl.loginUser($event);"
+      route-name="login">
+  </auth-form>
+</div>
+<br>
+<div class="auth__info">
+  <a ui-sref="register">
+    Don't have an account? Create one here.
+  </a> -->
+
+  <auth-form user="$ctrl.user" message="{{ $ctrl.error }}" button="Log In" top="Login" on-submit="$ctrl.loginUser($event);" route-name="login">
+  </auth-form>
   <div class="auth__info">
     <a ui-sref="register">
       Don't have an account? Create one here.
     </a>
-  </div></fieldset>
+  </div>
+</div>

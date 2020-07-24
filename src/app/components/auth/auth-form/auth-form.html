@@ -1,3 +1,4 @@
+<!-- Old way with fieldset
 <form name="authForm" novalidate ng-submit="$ctrl.submitForm();">
   <label>
     <input
@@ -47,4 +48,37 @@
   <div ng-if="$ctrl.message" class="error">
     {{ $ctrl.message }}
   </div>
+</form>
+-->
+<form name="authForm" novalidate ng-submit="$ctrl.submitForm();">
+  <md-card class="authForm">
+    <md-card-title>
+      <md-card-title-text>
+        <span class="md-headline">{{$ctrl.top}}</span>
+      </md-card-title-text>
+    </md-card-title>
+    <md-card-content>
+      <p>
+        <input type="email" name="email" required="required" placeholder="Enter your email" ng-model="$ctrl.user.email">
+      </p>
+      <p ng-if="$ctrl.routeName !== 'login'">
+        <input name="username" required="required" placeholder="Enter your username" ng-model="$ctrl.user.username">
+      </p>
+      <p>
+        <input type="password" name="password" required="required" placeholder="Enter your password" ng-model="$ctrl.user.password">
+      </p>
+      <p ng-if="$ctrl.routeName !== 'login'">
+        <select name="dorm" ng-model="$ctrl.user.dorm">
+          <option disabled selected value="">-- Please select a dorm --</option>
+          <option ng-repeat="item in $ctrl.dorms" value='{{item.id}}'>{{ item.Name }}</option>
+        </select>
+      </p>
+      <div ng-if="$ctrl.message" class="error">
+        {{ $ctrl.message }}
+      </div>
+    </md-card-content>
+    <md-card-actions layout="column" layout-align="right">
+      <md-button type="submit" ng-disabled="authForm.$invalid">{{ $ctrl.button }}</md-button>
+    </md-card-actions>
+  </md-card>
 </form>

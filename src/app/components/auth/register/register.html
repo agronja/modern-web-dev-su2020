@@ -1,5 +1,5 @@
-<fieldset>
 <div class="auth">
+  <!-- Old way
   <h1>Register</h1>
   <auth-form
     user="$ctrl.user"
@@ -14,5 +14,14 @@
   <a ui-sref="login">
     Already have an account? Login here.
   </a>
+  -->
+
+
+  <auth-form user="$ctrl.user" message="{{ $ctrl.error }}" top="Register" button="Create user" on-submit="$ctrl.createUser($event);" dorms="$ctrl.dorms">
+  </auth-form>
+  <div class="auth__info">
+    <a ui-sref="login">
+      Already have an account? Login here.
+    </a>
+  </div>
 </div>
-</fieldset>

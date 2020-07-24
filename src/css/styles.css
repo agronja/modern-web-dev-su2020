@@ -1,18 +1,19 @@
 /*main body styles*/
 body {
-   padding-top: 3vw;
-   padding-left: 3vw;
-   /*
+  padding-top: 3vw;
+  padding-left: 3vw;
+  /*
    background-repeat: no-repeat;
    background-size: cover;
    */
-   font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
+
 /*title syles*/
 h1 {
-   text-decoration: underline;
-   font-style:italic;
-   text-shadow: 3px 3px #6666;
+  text-decoration: underline;
+  font-style: italic;
+  text-shadow: 3px 3px #6666;
 }
 
 h2 {
@@ -33,9 +34,7 @@ h3 {
   list-style: none;
 }
 
-.header__labels {
-
-}
+.header__labels {}
 
 .header__labels li {
   display: inline-block;
@@ -54,16 +53,13 @@ h3 {
   border-bottom-color: #337ab7;
 }
 
-/*text for the home page*/
+
 .box {
   height: 280px;
   width: 600px;
   color: white;
-  margin: auto;
-  padding: 2px;
   display: flex;
   flex-wrap: wrap;
-  padding: 0px;
   font-weight: bold;
 }
 
@@ -92,7 +88,6 @@ h3 {
 .events li {
   display: inline-block;
 }
-
 
 .events li a {
   padding: 8px 12px;
@@ -126,14 +121,13 @@ h3 {
 }
 
 /*dorms tab*/
-.dorms{
-  padding-right: 3vw;
+.dorms {
+  right: 3vw;
+  left: 3vw;
   padding-bottom: 25px;
 }
 
-.event {
-
-}
+.event {}
 
 .logs {
   position: fixed;
@@ -154,7 +148,6 @@ h3 {
 }
 
 .welmessage {
-  margin: auto;
   text-align: left;
 }
 
@@ -168,10 +161,6 @@ ul {
 
 .fabToolbardemoBasicUsage md-fab-toolbar.md-right md-fab-trigger.align-with-text {
   left: 7px;
-  width: 90vw;
-}
-
-md-toolbar {
   width: 90vw;
 }
 
@@ -192,6 +181,8 @@ md-fab-toolbar {
   position: fixed;
   top: 20px;
   z-index: 100;
+  left: 3vw;
+  right: 3vw;
 }
 
 md-fab md-primary {
@@ -207,10 +198,23 @@ md-fab md-primary {
 
 .dormHeader {
   position: absolute;
+  left: 3vw;
 }
 
 .add {
   position: relative;
-  top:80px;
+  top: 80px;
   padding-right: 3vw;
+}
+
+.auth {
+  position: relative;
+  top: 55px;
+  max-width: 475px;
+  width: 50vw;
+  margin: auto;
+}
+
+.auth__info {
+  text-align: center;
 }
