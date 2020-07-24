@@ -1,5 +1,6 @@
 <!--template for the add events tab -->
 <div class="add">
+  <!-- Maybe I can change this to a card too?
   <form ng-submit="$ctrl.addEvent()">
     <fieldset class="event">
       <h2>Add Event</h2>
@@ -29,5 +30,31 @@
       </div>
     </fieldset>
 
+  </form>
+  -->
+  <form ng-submit="$ctrl.addEvent()">
+    <md-card>
+      <md-card-title>
+        <md-card-title-text>
+          <span class="md-headline">Add Event</span>
+          <span class="md-subhead">Please only add events for your own dorm!</span>
+        </md-card-title-text>
+      </md-card-title>
+      <md-card-content>
+        <p>Event Title: <input ng-model="$ctrl.title" type="text" id="title" required></p>
+        <p>Event Date: <input ng-model="$ctrl.date" type="date" id="date" min="2020-01-01" max="2050-12-31" required></p>
+        <p>Short Description of the Event:<br />
+          <textarea ng-model="$ctrl.body" type="text" id="body" rows="4" cols="30"></textarea>
+        </p>
+        <div ng-if="$ctrl.eventExists" class="nEvent">
+          <b>Event successfully added!</b>
+          <br>
+          Please wait while we redirect you to our events page...
+        </div>
+      </md-card-content>
+      <md-card-actions layout="column" layout-align="right">
+        <md-button type="submit" value="Submit">Submit</md-button>
+      </md-card-actions>
+    </md-card>
   </form>
 </div>

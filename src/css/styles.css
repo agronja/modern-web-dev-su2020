@@ -127,8 +127,8 @@ h3 {
 
 /*dorms tab*/
 .dorms{
-  padding-bottom: 215px;
   padding-right: 3vw;
+  padding-bottom: 25px;
 }
 
 .event {
@@ -201,6 +201,8 @@ md-fab md-primary {
 .layout-row {
   position: relative;
   top: 80px;
+  padding-bottom: 100px;
+  padding-right: 3vw;
 }
 
 .dormHeader {
@@ -210,4 +212,5 @@ md-fab md-primary {
 .add {
   position: relative;
   top:80px;
+  padding-right: 3vw;
 }
