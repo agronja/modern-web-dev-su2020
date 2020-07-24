@@ -53,6 +53,6 @@ Josh Agron
 ## Features
 
 * Top navigation bar has been changed from a static navbar to a dynamic using an md-fab toolbar (complete with a little hamburger icon)
-* Dorms and View Events pages changed from boring lists to cards using md-content
+* Everything has changed from boring lists or fieldsets to the new md-card!
 * Dorms now show their crests/Coat of Arms to make each dorm pop a little more (each crest is on the parse database, had to learn how to parse files from there)
 * To run website, type "gulp" into the command line in the directory where the src folder is located, and on a web browser, go to either http://0.0.0.0:8885/ or http://localhost:8885/
