@@ -29,13 +29,9 @@ angular
           .primaryPalette('brown')
           .accentPalette('lime');
 
-        $mdThemingProvider.theme('docs-dark')
-          .primaryPalette('yellow')
+        $mdThemingProvider.theme('')
+          .primaryPalette('green')
           .dark();
-
-          $mdThemingProvider.theme('')
-            .primaryPalette('green')
-            .dark();
 });
 
 /*

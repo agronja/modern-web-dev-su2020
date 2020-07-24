@@ -40,7 +40,7 @@ Mark Cheng, Josh Agron
 <a name="v0.4"></a>
 ## [0.4]
 
-In v0.4 I added some extra features to the dorms page
+In v0.4 I added some extra features to the dorms page. Changes can be seen in the files in the dorms folder and in app.module.js
 
 ## Bug Fixes
 

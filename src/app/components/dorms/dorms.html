@@ -26,11 +26,10 @@
       <ul class="lists">
         <md-card class="md-padding" ng-repeat="item in $ctrl.dorms" md-colors="{background: 'primary-900-0.43'}">
           <div class="things">
-            <!--<md-card class="md-raised" md-colors="{background: 'primary-900-0.43'}">-->
             <md-button class="md-raised" md-colors="{color: 'accent'}" >
               <h3> {{ item.get('Name') }} Hall </h3>
             </md-button>
-              <md-card-content>
+            <md-card-content>
               <br />
               Year Established: {{ item.get('Year') }}
               <br />
@@ -39,9 +38,9 @@
               Mascot: {{ item.get('Mascot') }}
               <br />
               <hr class="line"/>
-              </md-card-content>
-            </div>
-          </md-card>
+            </md-card-content>
+          </div>
+        </md-card>
       </ul>
     </div>
   </div>
