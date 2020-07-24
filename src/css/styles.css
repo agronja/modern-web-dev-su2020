@@ -83,6 +83,10 @@ h3 {
   flex-flow: row wrap;
   justify-content: space-around;
   list-style: none;
+  z-index: 5;
+  margin: auto;
+  position: absolute;
+  top: 60px;
 }
 
 .events li {
@@ -100,7 +104,7 @@ h3 {
 }
 
 .events li a.active {
-  border-bottom-color: red;
+  border-bottom-color: darkBlue;
 }
 
 .nEvent {
@@ -182,4 +186,28 @@ md-toolbar {
 md-card-title-media {
   max-width: 150px;
   width: 20vw;
+}
+
+md-fab-toolbar {
+  position: fixed;
+  top: 20px;
+  z-index: 100;
+}
+
+md-fab md-primary {
+  z-index: 1000;
+}
+
+.layout-row {
+  position: relative;
+  top: 80px;
+}
+
+.dormHeader {
+  position: absolute;
+}
+
+.add {
+  position: relative;
+  top:80px;
 }
