@@ -141,7 +141,7 @@ h3 {
 }
 
 .view {
-  padding-bottom: 50px;
+  padding-bottom: 125px;
 }
 
 .kill {
@@ -177,4 +177,9 @@ md-toolbar {
 
 .carddemoBasicUsage .card-media {
   background-color: #999999;
+}
+
+md-card-title-media {
+  max-width: 150px;
+  width: 20vw;
 }
