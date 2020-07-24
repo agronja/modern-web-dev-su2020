@@ -1,14 +1,49 @@
-<div class="dorms">
-    <ul class="lists">
-      <li ng-repeat="item in $ctrl.dorms" class="dorm">
-        <h3> {{ item.get('Name') }} Hall </h3>
-        Year Established: {{ item.get('Year') }}
-        <br />
-        Max Capacity: {{ item.get('Capacity') }}
-        <br />
-        Mascot: {{ item.get('Mascot') }}
-        <br />
-        <hr />
-      </li>
-    </ul>
+<div class="morethings" $ctrl.dynamicTheme = 'mark'>
+  <md-button class="md-raised" ng-click="dynamicTheme = 'default'">Default</md-button>
+  <md-button class="md-raised" ng-click="dynamicTheme = 'mark'">Mark's Theme</md-button>
+  <md-button class="md-raised" ng-click="dynamicTheme = 'nd'">ND Theme</md-button>
+  <md-button class="md-raised" ng-click="dynamicTheme = 'josh' ; showAlert($event)">Josh's Theme</md-button>
+  <!--<div md-theme="{{ dynamicTheme }}" md-theme-watch="" md-colors="::{backgroundColor: '{{dynamicTheme}}-primary-800'}">
+    <md-button class="md-primary">I'm dynamic</md-button>
+  </div>-->
+ <!--<div class="md-padding" id="popupContainer" ng-cloak>
+   <md-button class="md-raised" ng-click="showAlert($event)">Alert Dialog</md-button>
+ </div>-->
+ <br />
+ <div class="icon">
+   <p>click on the image below to view a map of the campus!</p>
+   <img id="myImg" <img src="../../../img/campusND.jpg" alt="NDmap" width="70" height="70"/>
+ </div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+  <div class="md-primary" md-theme="{{ dynamicTheme || theme }}" md-theme-watch="">
+    <div class="dorms">
+      <ul class="lists">
+        <md-card class="md-padding" ng-repeat="item in $ctrl.dorms" md-colors="{background: 'primary-900-0.43'}">
+          <div class="things">
+            <!--<md-card class="md-raised" md-colors="{background: 'primary-900-0.43'}">-->
+            <md-button class="md-raised" md-colors="{color: 'accent'}" >
+              <h3> {{ item.get('Name') }} Hall </h3>
+            </md-button>
+              <md-card-content>
+              <br />
+              Year Established: {{ item.get('Year') }}
+              <br />
+              Max Capacity: {{ item.get('Capacity') }}
+              <br />
+              Mascot: {{ item.get('Mascot') }}
+              <br />
+              <hr class="line"/>
+              </md-card-content>
+            </div>
+          </md-card>
+      </ul>
+    </div>
+  </div>
+
 </div>

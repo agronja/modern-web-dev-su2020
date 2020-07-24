@@ -36,3 +36,23 @@ Mark Cheng, Josh Agron
 * When registering as a new user, it prompts you for the dorm you currently live in.
 * Adding an event is now locked behind a login screen.
 * Adding an event no longer prompts for the dorm or the user's name.
+
+<a name="v0.4"></a>
+## [0.4]
+
+In v0.4 I added some extra features to the dorms page
+
+## Bug Fixes
+
+no new bug fixes in this version
+
+## Contributors
+
+Mark Cheng
+
+## Features
+
+* User can now interact with theme buttoms at the top of the dorms page to customize their experience!
+* Clicking the theme buttoms will change colors of the dorms list to make the information more appealing to the user
+* There is also a small map icon under the theme tabs which is clickable.
+* If the user clicks the map icon, then a large map of campus will pop up on the screen for the user to locate dorms if they so choose. To close the map, the user needs to click the "x" at the top right-hand corner of the page when the map is enlarged.

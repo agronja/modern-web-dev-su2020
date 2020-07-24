@@ -1,5 +1,7 @@
 //dorms.module.js
 angular
 	.module('dorms', [
-		'ui.router'
+		'ui.router',
+		'ngMaterial',
+		'ngMessages'
 	]);
