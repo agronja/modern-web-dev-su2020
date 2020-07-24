@@ -36,3 +36,22 @@ Mark Cheng, Josh Agron
 * When registering as a new user, it prompts you for the dorm you currently live in.
 * Adding an event is now locked behind a login screen.
 * Adding an event no longer prompts for the dorm or the user's name.
+
+<a name="v0.4"></a>
+## [0.4]
+
+In v0.4 I gave the website some quality of life changes.
+
+## Bug Fixes
+
+no new bug fixes in this version
+
+## Contributors
+
+Josh Agron
+
+## Features
+
+* Top navigation bar has been changed from a static navbar to a dynamic using an md-fab toolbar (complete with a little hamburger icon)
+* Dorms and View Events pages changed from boring lists to cards using md-content
+* Dorms now show their crests/Coat of Arms to make each dorm pop a little more (each crest is on the parse database, had to learn how to parse files from there)
