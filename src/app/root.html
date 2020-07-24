@@ -14,15 +14,13 @@
   <md-fab-toolbar md-open="$ctrl.demo.isOpen"
       count="$ctrl.demo.count"
       md-direction="{{$ctrl.demo.selectedDirection}}"
-      ng-mouseenter="$ctrl.demo.isOpen=true"
       ng-mouseleave="$ctrl.demo.isOpen=false">
     <md-fab-trigger class="align-with-text">
       <md-button aria-label="menu" class="md-fab md-primary">
-        <!--<md-icon md-svg-src="img/icons/menu.svg">MENU</md-icon>-->
-        MENU
+        <md-tooltip md-direction="top" md-visible="tooltipVisible">MENU</md-tooltip>
+        <md-icon md-svg-src="img/icons/menu.svg" aria-label="menu"></md-icon>
       </md-button>
     </md-fab-trigger>
-
 
     <md-toolbar>
       <md-fab-actions class="md-toolbar-tools">
