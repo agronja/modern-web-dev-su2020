@@ -13,10 +13,10 @@ angular
         ParseProvider.initialize(MY_PARSE_APP_ID, MY_PARSE_JS_KEY);
         ParseProvider.serverURL = 'https://parseapi.back4app.com/';
 
-        //disable theme generation
+        //theme generation when called
         $mdThemingProvider.generateThemesOnDemand(true);
 
-        //themes are still defined in config, but the css is not generated
+        //themes to be used on the dorms page
         $mdThemingProvider.theme('nd')
           .primaryPalette('yellow')
           .accentPalette('blue');

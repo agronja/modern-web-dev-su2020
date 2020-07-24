@@ -1,31 +1,31 @@
-<div class="morethings" $ctrl.dynamicTheme = 'mark'>
-  <md-button class="md-raised" ng-click="dynamicTheme = 'default'">Default</md-button>
-  <md-button class="md-raised" ng-click="dynamicTheme = 'mark'">Mark's Theme</md-button>
-  <md-button class="md-raised" ng-click="dynamicTheme = 'nd'">ND Theme</md-button>
-  <md-button class="md-raised" ng-click="dynamicTheme = 'josh' ; showAlert($event)">Josh's Theme</md-button>
-  <!--<div md-theme="{{ dynamicTheme }}" md-theme-watch="" md-colors="::{backgroundColor: '{{dynamicTheme}}-primary-800'}">
-    <md-button class="md-primary">I'm dynamic</md-button>
-  </div>-->
- <!--<div class="md-padding" id="popupContainer" ng-cloak>
-   <md-button class="md-raised" ng-click="showAlert($event)">Alert Dialog</md-button>
- </div>-->
+<div class="dormspage" $ctrl.dynamicTheme = 'mark'>
+  <!--The buttons that dictate the theme loaded by the page-->
+  <div class="thebuttons">
+    <md-button class="md-raised" ng-click="dynamicTheme = 'default'">Default</md-button>
+    <md-button class="md-raised" ng-click="dynamicTheme = 'mark'">Mark's Theme</md-button>
+    <md-button class="md-raised" ng-click="dynamicTheme = 'nd'">ND Theme</md-button>
+    <md-button class="md-raised" ng-click="dynamicTheme = 'josh' ; showAlert($event)">Josh's Theme</md-button>
+  </div>
  <br />
+ <!--icon for the map element -->
  <div class="icon">
    <p>click on the image below to view a map of the campus!</p>
-   <img id="myImg" <img src="../../../img/campusND.jpg" alt="NDmap" width="70" height="70"/>
+   <img id="myImg" <img src="../../../img/campusND.jpg" alt="Find your dorm on this NDmap" width="70" height="70"/>
  </div>
-<!-- The Modal -->
+<!-- The modal for the larger map-->
 <div id="myModal" class="modal">
   <span class="close">&times;</span>
   <img class="modal-content" id="img01">
   <div id="caption"></div>
 </div>
 
+  <!--The list of dorms on the page-->
   <div class="md-primary" md-theme="{{ dynamicTheme || theme }}" md-theme-watch="">
     <div class="dorms">
       <ul class="lists">
+        <!--each dorm is placed on a md-card-->
         <md-card class="md-padding" ng-repeat="item in $ctrl.dorms" md-colors="{background: 'primary-900-0.43'}">
-          <div class="things">
+          <div class="dormitems">
             <md-button class="md-raised" md-colors="{color: 'accent'}" >
               <h3> {{ item.get('Name') }} Hall </h3>
             </md-button>

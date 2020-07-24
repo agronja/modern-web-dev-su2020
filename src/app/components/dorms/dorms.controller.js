@@ -1,16 +1,19 @@
 function DormsController($state, $mdTheming, $mdDialog, $scope) {
     const ctrl = this;
 
+    // generate themes for the page
     $mdTheming.generateTheme('mark');
     $mdTheming.generateTheme('nd');
     $mdTheming.generateTheme('josh');
     $mdTheming.generateTheme('');
 
+    //declare element
     ctrl.dynamicTheme = 'mark';
 
+    //get modal from the html
     var modal = document.getElementById("myModal");
 
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    // Get NDmap and insert it inside the modal - use its "alt" text as a caption
     var img = document.getElementById("myImg");
     var modalImg = document.getElementById("img01");
     var captionText = document.getElementById("caption");
@@ -20,18 +23,16 @@ function DormsController($state, $mdTheming, $mdDialog, $scope) {
       captionText.innerHTML = this.alt;
     }
 
-    // Get the <span> element that closes the modal
+    // Get the <span> element that closes the NDmap
     var span = document.getElementsByClassName("close")[0];
 
-    // When the user clicks on <span> (x), close the modal
+    // When the user clicks on <span> (x), close the NDmap
     span.onclick = function() {
       modal.style.display = "none";
     }
 
+    // alert to pop up on the screen when Josh's Theme is selected
     $scope.showAlert = function(ev) {
-    // Appending dialog to document.body to cover sidenav in docs app
-    // Modal dialogs should fully cover application
-    // to prevent interaction outside of dialog
       $mdDialog.show(
         $mdDialog.alert()
           .clickOutsideToClose(true)

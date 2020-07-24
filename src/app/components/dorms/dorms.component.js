@@ -1,3 +1,4 @@
+//dorms component
 var dorms = {
   templateUrl: './dorms.html',
   controller: 'DormsController',

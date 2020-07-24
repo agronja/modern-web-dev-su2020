@@ -120,30 +120,32 @@ h2 {
 /*dorms tab*/
 .dorms{
   padding-bottom: 125px;
-  padding-right: 200px;
+  padding-right: 240px;
   text-align: center;
   padding: 10px;
 }
 
-.things {
-  padding-right: 40px;
-}
-
-.morethings {
+/*dorms page*/
+.dormspage {
   padding-left: 40px;
-  padding-right: 80px;
+  padding-right: 120px;
 }
 
+/*the dorm information*/
+.dormitems {
+  padding-right: 10px;
+}
+
+/*theme buttons on the dorms page*/
+.thebuttons {
+  padding-left: 45px;
+}
+
+/*hr on the dorms page under each dorm information*/
 .line {
   border-top: 3px solid lightgrey;
 }
 
-.dorm {
-}
-
-.event {
-
-}
 
 .logs {
   position: fixed;
@@ -181,17 +183,13 @@ md-backdrop.md-opaque {
     background-color: white;
 }
 
-.md-raised {
-  text-align: center;
-  justify-content: center;
-}
-
 .list-item-text {
   display: flex;
   text-align: center;
   justify-content: center;
 }
 
+/*list element on dorms page*/
 .list {
   display: flex;
   text-align: center;
@@ -207,6 +205,7 @@ ul {
   list-style-type: none;
 }
 
+/*map element on dorms page*/
 #myImg {
   border-radius: 5px;
   cursor: pointer;
@@ -215,7 +214,7 @@ ul {
 
 #myImg:hover {opacity: 0.7;}
 
-/* The Modal (background) */
+/* The Modal for the map (background) */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -230,7 +229,7 @@ ul {
   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 
-/* Modal Content (image) */
+/* Modal Content (image of NDcampus) */
 .modal-content {
   margin: auto;
   display: block;
@@ -238,7 +237,7 @@ ul {
   max-width: 700px;
 }
 
-/* Caption of Modal Image */
+/* Caption of map */
 #caption {
   margin: auto;
   display: block;
@@ -250,7 +249,7 @@ ul {
   height: 150px;
 }
 
-/* Add Animation */
+/* Add Animation for map element */
 .modal-content, #caption {
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
@@ -268,7 +267,7 @@ ul {
   to {transform:scale(1)}
 }
 
-/* The Close Button */
+/* The Close Button for the map */
 .close {
   position: absolute;
   top: 15px;
@@ -293,7 +292,9 @@ ul {
   }
 }
 
+/*alignment for the map icon and text on the screen*/
 .icon {
   text-align: center;
   justify-content: center;
+  padding-left: 30px;
 }
