@@ -52,7 +52,9 @@ Mark Cheng
 
 ## Features
 
+* Main changes can be found on the Dorms page which can be navigated to through the tabs bar.
 * User can now interact with theme buttoms at the top of the dorms page to customize their experience!
 * Clicking the theme buttoms will change colors of the dorms list to make the information more appealing to the user (because I did not consult Josh on his theme color, there is also an alert stating such informtion when Josh's Theme is selected)
 * There is also a small map icon under the theme tabs which is clickable.
 * If the user clicks the map icon, a large map of campus will pop up on the screen for the user to locate dorms if they so choose. To close the map, the user needs to click the "x" at the top right-hand corner of the page when the map is enlarged.
+* changes in the code can be found in the dorms folder inside the components folder and in app.module.js
